@@ -1,0 +1,25 @@
+:root {
+  --primary: #0d1b2a;
+  --secondary: #ffffff;
+  --accent: #d4af37;
+  --glass-bg: rgba(255,255,255,0.12);
+  --glass-border: rgba(255,255,255,0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0d1b2a, #1b263b);
+  color: var(--secondary);
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
