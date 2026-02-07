@@ -78,7 +78,7 @@
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive font size */
-            color: rgba(255, 255, 255, 0.12); /* Lite transparent white */
+            color: rgba(255, 255, 255, 0.15); /* Lite transparent white */
             pointer-events: none; /* Allows clicking through the text */
             z-index: 10;
             white-space: nowrap;
@@ -218,7 +218,7 @@
         .whatsapp-icon { bottom: 20px; left: 20px; background-color: #25d366; }
     </style>
 </head>
-<body class="antialiased" oncontextmenu="return false;"> <!-- Basic right-click disable -->
+<body class="antialiased" oncontextmenu="return false;"> <!-- Right-click disabled for security -->
 
     <!-- 🧭 NAVIGATION -->
     <nav class="fixed w-full z-50 transition-all duration-300 glass-panel border-b border-white/5" id="navbar">
@@ -366,9 +366,68 @@
                              <div class="h-48 relative watermark-wrapper">
                                  <img src="assets/images/South facing type_3.webp" class="w-full h-full object-cover">
                                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Neo-Modern</h4></div>
+                             </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Home Page Contact Form (Moved Below Gallery) -->
+            <div class="container mx-auto px-6 py-16">
+                <div class="glass-panel max-w-2xl mx-auto p-8 rounded-2xl relative">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-serif text-white">Quick Enquiry</h3>
+                        <p class="text-gray-400 text-sm">Download our e-brochure instantly.</p>
+                    </div>
+                    <form id="homeForm" class="space-y-4">
+                        <input type="text" placeholder="Name" required class="w-full bg-slate-800/50 border border-white/10 rounded p-3 text-white focus:border-gold outline-none">
+                        <input type="tel" placeholder="Phone" required class="w-full bg-slate-800/50 border border-white/10 rounded p-3 text-white focus:border-gold outline-none">
+                        <button type="submit" class="w-full btn-primary">Get Brochure</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="container mx-auto px-6 py-16 border-t border-white/5">
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-serif text-white">Frequently Asked Questions</h2>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <details class="glass-card rounded-lg p-4 group">
+                        <summary class="flex justify-between items-center font-medium text-gold">What are the villa sizes available? <span class="group-open:rotate-180 transition"><i class="fas fa-chevron-down"></i></span></summary>
+                        <p class="text-gray-300 text-sm mt-3 pl-2 border-l-2 border-gold/30">We offer 3 BHK (2800 Sft) and 4 BHK (3200-4500 Sft) independent villas.</p>
+                    </details>
+                    <details class="glass-card rounded-lg p-4 group">
+                        <summary class="flex justify-between items-center font-medium text-gold">Is the project HMDA approved? <span class="group-open:rotate-180 transition"><i class="fas fa-chevron-down"></i></span></summary>
+                        <p class="text-gray-300 text-sm mt-3 pl-2 border-l-2 border-gold/30">Yes, Hiwa Nirvara is fully HMDA approved and RERA registered.</p>
+                    </details>
+                    <details class="glass-card rounded-lg p-4 group">
+                        <summary class="flex justify-between items-center font-medium text-gold">What is the completion timeline? <span class="group-open:rotate-180 transition"><i class="fas fa-chevron-down"></i></span></summary>
+                        <p class="text-gray-300 text-sm mt-3 pl-2 border-l-2 border-gold/30">Phase 1 is ready for handover by Dec 2025. Phase 2 by mid-2026.</p>
+                    </details>
+                    <details class="glass-card rounded-lg p-4 group">
+                        <summary class="flex justify-between items-center font-medium text-gold">Are banks providing loans? <span class="group-open:rotate-180 transition"><i class="fas fa-chevron-down"></i></span></summary>
+                        <p class="text-gray-300 text-sm mt-3 pl-2 border-l-2 border-gold/30">Yes, the project is approved by SBI, HDFC, ICICI, and Axis Bank.</p>
+                    </details>
+                    <details class="glass-card rounded-lg p-4 group">
+                        <summary class="flex justify-between items-center font-medium text-gold">Can we customize the interiors? <span class="group-open:rotate-180 transition"><i class="fas fa-chevron-down"></i></span></summary>
+                        <p class="text-gray-300 text-sm mt-3 pl-2 border-l-2 border-gold/30">Yes, internal structural changes are permitted before the brickwork stage.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3️⃣ VILLAS LISTING PAGE -->
+        <section id="page-villas" class="page-section container mx-auto px-6 py-12">
+            <div class="text-center mb-16">
+                <span class="text-gold uppercase tracking-widest text-sm">Configurations</span>
+                <h2 class="text-4xl font-serif mt-2">Choose Your Sanctuary</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
                 <!-- Villa A: The Azure (East Facing) -->
                 <div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-azure')">
                     <div class="h-64 overflow-hidden relative watermark-wrapper">
+                        <!-- Corrected filename from user request -->
                         <img src="assets/images/Easy facing villa type.1.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <span class="absolute top-4 right-4 bg-gold text-black text-xs font-bold px-3 py-1">EAST FACING</span>
                     </div>
@@ -598,25 +657,219 @@
                  <div class="w-full h-full watermark-wrapper">
                     <img src="assets/images/Aerial view.webp" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition duration-700">
                  </div>
-                main.src = src; // Direct Src Update
+                 <div class="absolute inset-0 flex items-center justify-center">
+                     <a href="https://maps.google.com" target="_blank" class="glass-card px-6 py-3 rounded-full text-white hover:text-gold flex items-center gap-2">
+                         <i class="fas fa-map-marker-alt text-red-500"></i> Open in Google Maps
+                     </a>
+                 </div>
+            </div>
+        </section>
+
+        <!-- TERMS & CONDITIONS PAGE -->
+        <section id="page-terms" class="page-section container mx-auto px-6 py-12">
+            <div class="glass-panel p-8 rounded-2xl max-w-4xl mx-auto">
+                <h1 class="text-3xl font-serif text-gold mb-6">Terms & Conditions</h1>
+                <div class="text-gray-300 text-sm space-y-4">
+                    <p><strong>1. Introduction:</strong> Welcome to Hiwa Nirvara. By accessing this website, you agree to these terms.</p>
+                    <p><strong>2. Accuracy of Information:</strong> The visuals, dimensions, and specifications are indicative and subject to change by the developer.</p>
+                    <p><strong>3. Intellectual Property:</strong> All content, images, and logos are the property of Hiwa Nirvara.</p>
+                    <p><strong>4. Limitation of Liability:</strong> Hiwa Nirvara is not liable for any damages arising from the use of this website.</p>
+                    <p><strong>5. RERA:</strong> This project is registered under TSRERA. Registration No: P0220000XXXX.</p>
+                    <button onclick="route(event, 'home')" class="mt-6 text-gold underline">Back to Home</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9️⃣ CONTACT PAGE -->
+        <section id="page-contact" class="page-section container mx-auto px-6 py-12 flex flex-col justify-center min-h-[80vh]">
+            <div class="glass-panel w-full max-w-5xl mx-auto rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
+                <!-- Contact Info -->
+                <div class="md:w-2/5 bg-slate-900/90 p-10 flex flex-col justify-between border-r border-white/5">
+                    <div>
+                        <h2 class="text-3xl font-serif text-white mb-8">Get In Touch</h2>
+                        <div class="space-y-8">
+                            <div class="flex gap-4"><div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold"><i class="fas fa-map-marker-alt"></i></div><div><h5 class="text-white font-medium">Site Address</h5><p class="text-gray-400 text-sm">Survey No. 45/A, Warangal Highway, Narapally</p></div></div>
+                            <div class="flex gap-4"><div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold"><i class="fas fa-envelope"></i></div><div><h5 class="text-white font-medium">Email</h5><p class="text-gray-400 text-sm">sales@hiwanirvara.com</p></div></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="md:w-3/5 p-10 bg-white/5 relative">
+                    <h3 class="text-xl text-gold font-serif mb-2">Register Interest</h3>
+                    <form id="enquiryForm" class="space-y-5">
+                        <input type="text" name="user_name" placeholder="Your Name" required class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+                        <input type="tel" name="user_phone" placeholder="Phone Number" required class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+                        <input type="email" name="user_email" placeholder="Email Address" required class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+                        <button type="submit" class="w-full btn-primary mt-4">Submit Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-white/5 bg-black/40 mt-auto py-12">
+        <div class="container mx-auto px-6">
+             <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h4 class="text-2xl font-serif text-white mb-2">HIWA NIRVARA</h4>
+                    <p class="text-gray-400 text-xs">Narapally, Secunderabad, Telangana</p>
+                </div>
+                <div class="flex space-x-6 text-xl">
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-youtube"></i></a>
+                </div>
+             </div>
+             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
+                <p>&copy; 2024 Hiwa Nirvara. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#terms" onclick="route(event, 'terms')" class="hover:text-gold">Terms & Conditions</a>
+                    <a href="#" class="hover:text-gold">Privacy Policy</a>
+                    <span>RERA No: P0220000XXXX</span>
+                </div>
+             </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp & Chatbot -->
+    <a href="https://wa.me/919876543210" target="_blank" class="float-icon whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- LIGHTBOX -->
+    <div id="lightbox" class="fixed inset-0 z-[60] bg-black/95 hidden flex items-center justify-center p-4 backdrop-blur-md opacity-0 transition-opacity duration-300">
+        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white hover:text-gold text-4xl">&times;</button>
+        <img id="lightbox-img" class="max-w-full max-h-[90vh] rounded-lg shadow-[0_0_50px_rgba(255,255,255,0.1)] transform scale-95 transition-transform duration-300">
+    </div>
+
+    <!-- ⚙️ LOGIC -->
+    <script>
+        // --- Router Logic ---
+        function route(event, pageId) {
+            if(event) event.preventDefault();
+            
+            // Update URL hash without scrolling
+            window.history.pushState({page: pageId}, "", `#${pageId}`);
+            
+            // 1. Hide all pages
+            document.querySelectorAll('.page-section').forEach(el => {
+                el.classList.remove('active');
+                el.style.display = 'none'; // Force hide
+            });
+
+            // 2. Show target page
+            const target = document.getElementById(`page-${pageId}`);
+            if(target) {
+                target.style.display = 'block'; // Force show
+                // Small delay to allow display:block to apply before adding active class for fade-in
+                setTimeout(() => target.classList.add('active'), 10);
+                window.scrollTo(0,0);
+            } else {
+                console.error("Page not found:", pageId);
+            }
+
+            // 3. Update Navigation State
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                if(link.getAttribute('href') === `#${pageId}`) link.classList.add('active');
+            });
+        }
+
+        // Handle Back/Forward Browser Buttons
+        window.onpopstate = function(event) {
+            const pageId = event.state && event.state.page ? event.state.page : (window.location.hash.replace('#', '') || 'home');
+            route(null, pageId);
+        };
+
+        // --- Mobile Menu Logic ---
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+            }
+        }
+
+        // --- Gallery Image Switcher ---
+        function updateHomeGallery(src, caption) {
+            const main = document.getElementById('rich-gallery-main');
+            const cap = document.getElementById('rich-gallery-caption');
+            
+            main.style.opacity = '0';
+            setTimeout(() => {
+                main.src = src;
                 cap.innerText = caption;
                 main.style.opacity = '1';
             }, 200);
         }
 
-        // --- Lightbox ---
+        // --- Lightbox Logic ---
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
 
         function openLightbox(element) {
-            const imgSrc = element.querySelector('img').src;
-            lightboxImg.src = imgSrc;
+            const img = element.querySelector('img');
+            if (img) {
+                lightboxImg.src = img.src;
+                lightbox.classList.remove('hidden');
+                setTimeout(() => {
+                    lightbox.classList.remove('opacity-0');
+                    lightboxImg.classList.remove('scale-95');
+                    lightboxImg.classList.add('scale-100');
+                }, 10);
+            }
+        }
+
+        function closeLightbox() {
+            lightbox.classList.add('opacity-0');
+            lightboxImg.classList.remove('scale-100');
+            lightboxImg.classList.add('scale-95');
+            setTimeout(() => lightbox.classList.add('hidden'), 300);
+        }
+
+        // --- Initialization ---
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Handle Initial Route
+            const hash = window.location.hash.replace('#', '') || 'home';
+            route(null, hash);
+            
+            // 2. EmailJS Form Handling
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const btn = this.querySelector('button');
+                    const originalText = btn.innerText;
+                    
+                    btn.innerText = "Sending...";
+                    btn.disabled = true;
+
+                    // Simulate sending (Replace with emailjs.sendForm logic if needed)
+                    setTimeout(() => {
+                        alert("Enquiry Sent! We will contact you shortly.");
+                        this.reset();
+                        btn.innerText = "Sent";
+                        setTimeout(() => {
+                            btn.innerText = originalText;
+                            btn.disabled = false;
+                        }, 2000);
+                    }, 1500);
+                });
+            });
+        });
+
         // --- Tawk.io Integration ---
         var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         (function(){
         var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
         s1.async=true;
-        s1.src='https://embed.tawk.to/YOUR_TAWK_ID/default'; 
+        s1.src='https://embed.tawk.to/YOUR_TAWK_ID/default'; // REPLACE WITH YOUR ID
         s1.charset='UTF-8';
         s1.setAttribute('crossorigin','*');
         s0.parentNode.insertBefore(s1,s0);
