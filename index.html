@@ -1,4 +1,5 @@
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Hiwa Nirvara | Luxury Villas in Narapally</title>
@@ -11,14 +12,13 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;family=Poppins:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Tailwind CSS -->
-    <script async="" src="https://embed.tawk.to/YOUR_TAWK_ID/default" charset="UTF-8" crossorigin="*"></script><script async="" src="https://embed.tawk.to/YOUR_TAWK_ID/default" charset="UTF-8" crossorigin="*"></script>
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- EmailJS SDK -->
@@ -61,30 +61,6 @@
         }
 
         h1, h2, h3, h4, h5 { font-family: 'Playfair Display', serif; }
-
-        /* --- Watermark Security System --- */
-        .watermark-wrapper {
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .watermark-wrapper::after {
-            content: "HIWA NIRVARA"; /* The Trademark Text */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-45deg);
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            font-size: clamp(1.5rem, 4vw, 3rem); /* Responsive font size */
-            color: rgba(255, 255, 255, 0.15); /* Lite transparent white */
-            pointer-events: none; /* Allows clicking through the text */
-            z-index: 10;
-            white-space: nowrap;
-            letter-spacing: 0.2em;
-            text-shadow: 0 0 20px rgba(0,0,0,0.2);
-            user-select: none;
-        }
 
         /* Prevent Image Dragging */
         img {
@@ -215,62 +191,50 @@
         }
         .float-icon:hover { transform: scale(1.1); }
         .whatsapp-icon { bottom: 20px; left: 20px; background-color: #25d366; }
-        .phone-icon { bottom: 90px; left: 20px; background-color: #007bff; }
-
+        
         /* --- EMI Calculator Styles --- */
-        .emi-slider::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            appearance: none;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--accent-gold);
-            cursor: pointer;
-            border: 2px solid #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        .emi-input {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            width: 100%;
         }
-
-        .emi-slider::-moz-range-thumb {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: var(--accent-gold);
-            cursor: pointer;
-            border: 2px solid #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        .emi-input:focus {
+            outline: none;
+            border-color: var(--accent-gold);
         }
-
+        .emi-result-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(15, 23, 42, 0.8) 100%);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
         .bank-card {
             transition: all 0.3s ease;
-            border: 1px solid transparent;
+            cursor: pointer;
         }
-
         .bank-card:hover {
-            border-color: var(--accent-gold);
             transform: translateY(-5px);
+            border-color: var(--accent-gold);
         }
-
         .bank-card.selected {
             border-color: var(--accent-gold);
             background: rgba(212, 175, 55, 0.1);
         }
     </style>
-
-    <!-- Tailwind CSS Configuration -->
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'gold': '#d4af37',
-                        'gold-light': '#f3e5ab',
+                        gold: '#d4af37'
                     }
                 }
             }
         }
     </script>
-<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.right-3{right:0.75rem}.right-4{right:1rem}.right-6{right:1.5rem}.top-2{top:0.5rem}.top-4{top:1rem}.top-6{top:1.5rem}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.z-\[60\]{z-index:60}.mx-auto{margin-left:auto;margin-right:auto}.-mt-20{margin-top:-5rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-16{margin-top:4rem}.mt-2{margin-top:0.5rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-6{margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-auto{margin-top:auto}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.aspect-square{aspect-ratio:1 / 1}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-24{height:6rem}.h-32{height:8rem}.h-48{height:12rem}.h-64{height:16rem}.h-80{height:20rem}.h-\[400px\]{height:400px}.h-\[50vh\]{height:50vh}.h-\[60vh\]{height:60vh}.h-auto{height:auto}.h-full{height:100%}.h-screen{height:100vh}.max-h-\[90vh\]{max-height:90vh}.min-h-\[80vh\]{min-height:80vh}.w-10{width:2.5rem}.w-12{width:3rem}.w-2{width:0.5rem}.w-32{width:8rem}.w-\[85\%\]{width:85%}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-full{max-width:100%}.max-w-md{max-width:28rem}.flex-1{flex:1 1 0%}.flex-none{flex:none}.scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes pulse{50%{opacity:.5}}.animate-\[pulse_10s_ease-in-out_infinite\]{animation:pulse 10s ease-in-out infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.cursor-pointer{cursor:pointer}.snap-x{scroll-snap-type:x var(--tw-scroll-snap-strictness)}.snap-center{scroll-snap-align:center}.columns-1{columns:1}.break-inside-avoid{break-inside:avoid}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-0{border-width:0px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-2{border-left-width:2px}.border-r{border-right-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-gold{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.border-gold\/30{border-color:rgb(212 175 55 / 0.3)}.border-gold\/40{border-color:rgb(212 175 55 / 0.4)}.border-gray-600{--tw-border-opacity:1;border-color:rgb(75 85 99 / var(--tw-border-opacity, 1))}.border-transparent{border-color:transparent}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/5{border-color:rgb(255 255 255 / 0.05)}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/95{background-color:rgb(0 0 0 / 0.95)}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-blue-900\/20{background-color:rgb(30 58 138 / 0.2)}.bg-gold{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.bg-gold\/20{background-color:rgb(212 175 55 / 0.2)}.bg-green-500{--tw-bg-opacity:1;background-color:rgb(34 197 94 / var(--tw-bg-opacity, 1))}.bg-green-600{--tw-bg-opacity:1;background-color:rgb(22 163 74 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-slate-800\/50{background-color:rgb(30 41 59 / 0.5)}.bg-slate-900\/90{background-color:rgb(15 23 42 / 0.9)}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.bg-yellow-500{--tw-bg-opacity:1;background-color:rgb(234 179 8 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-t{background-image:linear-gradient(to top, var(--tw-gradient-stops))}.from-black\/60{--tw-gradient-from:rgb(0 0 0 / 0.6) var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900{--tw-gradient-from:#0f172a var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-slate-900\/60{--tw-gradient-from:rgb(15 23 42 / 0.6) var(--tw-gradient-from-position);--tw-gradient-to:rgb(15 23 42 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-slate-900\/40{--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(15 23 42 / 0.4) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#0f172a\]{--tw-gradient-to:#0f172a var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.object-cover{object-fit:cover}.p-1{padding:0.25rem}.p-10{padding:2.5rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-0{padding-left:0px;padding-right:0px}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0{padding-top:0px;padding-bottom:0px}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:0.25rem}.pb-4{padding-bottom:1rem}.pl-2{padding-left:0.5rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-right{text-align:right}.font-serif{font-family:ui-serif, Georgia, Cambria, "Times New Roman", Times, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-\[10px\]{font-size:10px}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-light{font-weight:300}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-gold{--tw-text-opacity:1;color:rgb(212 175 55 / var(--tw-text-opacity, 1))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235 / var(--tw-text-opacity, 1))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219 / var(--tw-text-opacity, 1))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity, 1))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity, 1))}.text-red-500{--tw-text-opacity:1;color:rgb(239 68 68 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.no-underline{-webkit-text-decoration-line:none;text-decoration-line:none}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-20{opacity:0.2}.opacity-50{opacity:0.5}.opacity-60{opacity:0.6}.opacity-70{opacity:0.7}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_20px_rgba\(212\2c 175\2c 55\2c 0\.4\)\]{--tw-shadow:0 0 20px rgba(212,175,55,0.4);--tw-shadow-colored:0 0 20px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-\[0_0_50px_rgba\(255\2c 255\2c 255\2c 0\.1\)\]{--tw-shadow:0 0 50px rgba(255,255,255,0.1);--tw-shadow-colored:0 0 50px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.drop-shadow-2xl{--tw-drop-shadow:drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-700{transition-duration:700ms}.hover\:border-gold:hover{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-gold:hover{--tw-bg-opacity:1;background-color:rgb(212 175 55 / var(--tw-bg-opacity, 1))}.hover\:bg-gold\/80:hover{background-color:rgb(212 175 55 / 0.8)}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/5:hover{background-color:rgb(255 255 255 / 0.05)}.hover\:text-black:hover{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity, 1))}.hover\:text-gold:hover{--tw-text-opacity:1;color:rgb(212 175 55 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:opacity-100:hover{opacity:1}.focus\:border-gold:focus{--tw-border-opacity:1;border-color:rgb(212 175 55 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group[open] .group-open\:rotate-180{--tw-rotate:180deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:opacity-40{opacity:0.4}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:mt-0{margin-top:0px}.md\:h-\[500px\]{height:500px}.md\:w-2\/5{width:40%}.md\:w-3\/5{width:60%}.md\:w-\[40\%\]{width:40%}.md\:columns-3{columns:3}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:text-left{text-align:left}.md\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width: 1024px){.lg\:flex{display:flex}.lg\:hidden{display:none}.lg\:text-8xl{font-size:6rem;line-height:1}}</style></head>
-<body class="antialiased" oncontextmenu="return false;">
+</head>
+<body class="antialiased">
 
     <!-- 🧭 NAVIGATION -->
     <nav class="fixed w-full z-50 transition-all duration-300 glass-panel border-b border-white/5" id="navbar">
@@ -287,7 +251,7 @@
                 <a href="#amenities" onclick="route(event, 'amenities')" class="nav-link hover:text-gold transition-colors">Amenities</a>
                 <a href="#gallery" onclick="route(event, 'gallery')" class="nav-link hover:text-gold transition-colors">Gallery</a>
                 <a href="#location" onclick="route(event, 'location')" class="nav-link hover:text-gold transition-colors">Location</a>
-                <a href="#loan-calculator" onclick="route(event, 'loan-calculator')" class="nav-link hover:text-gold transition-colors">Loan Calculator</a>
+                <a href="#emi" onclick="route(event, 'emi')" class="nav-link hover:text-gold transition-colors">EMI Calculator</a>
                 <a href="#contact" onclick="route(event, 'contact')" class="btn-primary text-xs text-black no-underline">Enquire</a>
             </div>
 
@@ -305,7 +269,7 @@
             <a href="#amenities" onclick="route(event, 'amenities'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Amenities</a>
             <a href="#gallery" onclick="route(event, 'gallery'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Gallery</a>
             <a href="#location" onclick="route(event, 'location'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Location</a>
-            <a href="#loan-calculator" onclick="route(event, 'loan-calculator'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Loan Calculator</a>
+            <a href="#emi" onclick="route(event, 'emi'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">EMI Calculator</a>
             <a href="#contact" onclick="route(event, 'contact'); toggleMobileMenu()" class="text-xl text-gold border border-gold px-8 py-2">Enquire</a>
         </div>
     </nav>
@@ -316,9 +280,9 @@
         <!-- 1️⃣ HOME PAGE -->
         <section id="page-home" class="page-section h-auto -mt-20 active" style="display: block;">
             <!-- Hero -->
-            <div class="relative h-screen flex items-center justify-center overflow-hidden watermark-wrapper">
+            <div class="relative h-screen flex items-center justify-center overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <img src="assets/images/Aerial view.webp" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]">
+                    <img src="assets/images/Aerial view.webp" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]" onerror="this.style.display='none'">
                     <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-[#0f172a]"></div>
                 </div>
                 <div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-16">
@@ -329,7 +293,7 @@
                     <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 text-gradient-gold drop-shadow-2xl leading-tight">
                         HIWA NIRVARA
                     </h1>
-                    <p class="text-lg text-gray-200 font-light max-w-2xl mx-auto mb-10">Premium 3 &amp; 4 BHK Independent Villas</p>
+                    <p class="text-lg text-gray-200 font-light max-w-2xl mx-auto mb-10">Premium 3 & 4 BHK Independent Villas</p>
                     <button onclick="route(event, 'villas')" class="btn-primary shadow-[0_0_20px_rgba(212,175,55,0.4)]">Explore Residences</button>
                 </div>
             </div>
@@ -340,7 +304,7 @@
                     <h3 class="text-gold uppercase tracking-widest text-sm mb-6 text-center">The Arrival Experience</h3>
                     <div class="flex overflow-x-auto gap-4 pb-4 snap-x">
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'villas')">
-                             <div class="h-48 relative watermark-wrapper">
+                             <div class="h-48 relative">
                                  <img src="assets/images/Entrance.webp" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Grand Entrance</h4></div>
                              </div>
@@ -349,7 +313,7 @@
                              </div>
                          </div>
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'amenities')">
-                             <div class="h-48 relative watermark-wrapper">
+                             <div class="h-48 relative">
                                  <img src="assets/images/Landscape_1.webp" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Lush Landscapes</h4></div>
                              </div>
@@ -358,12 +322,12 @@
                              </div>
                          </div>
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'amenity-club')">
-                             <div class="h-48 relative watermark-wrapper">
+                             <div class="h-48 relative">
                                  <img src="assets/images/Clubhouse.webp" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
                                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Elite Club</h4></div>
                              </div>
                              <div class="p-4 text-center">
-                                 <p class="text-xs text-gray-400">Infinity Pools &amp; Sky Decks</p>
+                                 <p class="text-xs text-gray-400">Infinity Pools & Sky Decks</p>
                              </div>
                          </div>
                     </div>
@@ -378,7 +342,7 @@
                 </div>
                 <div class="glass-panel p-2 rounded-2xl max-w-5xl mx-auto">
                     <!-- Main Display Image -->
-                    <div class="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl mb-4 group watermark-wrapper">
+                    <div class="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl mb-4 group">
                         <img id="rich-gallery-main" src="assets/images/Street view.webp" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
                             <h3 id="rich-gallery-caption" class="text-2xl font-serif text-white">Serene Streetscapes</h3>
@@ -386,13 +350,13 @@
                     </div>
                     <!-- Thumbnails -->
                     <div class="grid grid-cols-3 gap-4">
-                        <div onclick="updateHomeGallery('assets/images/Street view.webp', 'Serene Streetscapes')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-gold opacity-100 hover:opacity-100 transition watermark-wrapper">
+                        <div onclick="updateHomeGallery('assets/images/Street view.webp', 'Serene Streetscapes')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-gold opacity-100 hover:opacity-100 transition">
                             <img src="assets/images/Street view.webp" class="w-full h-full object-cover">
                         </div>
-                        <div onclick="updateHomeGallery('assets/images/Balcony view.webp', 'Private Balconies')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition watermark-wrapper">
+                        <div onclick="updateHomeGallery('assets/images/Balcony view.webp', 'Private Balconies')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
                             <img src="assets/images/Balcony view.webp" class="w-full h-full object-cover">
                         </div>
-                        <div onclick="updateHomeGallery('assets/images/Street Night View.webp', 'Evening Ambiance')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition watermark-wrapper">
+                        <div onclick="updateHomeGallery('assets/images/Street Night View.webp', 'Evening Ambiance')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
                             <img src="assets/images/Street Night View.webp" class="w-full h-full object-cover">
                         </div>
                     </div>
@@ -405,19 +369,19 @@
                     <h3 class="text-gold uppercase tracking-widest text-sm mb-6 text-center">Exclusive Designs</h3>
                     <div class="flex overflow-x-auto gap-4 pb-4 snap-x">
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'villas')">
-                             <div class="h-48 relative watermark-wrapper">
+                             <div class="h-48 relative">
                                  <img src="assets/images/South facing type_1.webp" class="w-full h-full object-cover">
                                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Modern Contemporary</h4></div>
                              </div>
                          </div>
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'villas')">
-                             <div class="h-48 relative watermark-wrapper">
+                             <div class="h-48 relative">
                                  <img src="assets/images/South facing type_2.webp" class="w-full h-full object-cover">
                                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Classic Elegance</h4></div>
                              </div>
                          </div>
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'villas')">
-                             <div class="h-48 relative watermark-wrapper">
+                             <div class="h-48 relative">
                                  <img src="assets/images/South facing type_3.webp" class="w-full h-full object-cover">
                                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Neo-Modern</h4></div>
                              </div>
@@ -434,8 +398,8 @@
                         <p class="text-gray-400 text-sm">Download our e-brochure instantly.</p>
                     </div>
                     <form id="homeForm" class="space-y-4">
-                        <input type="text" placeholder="Name" required="" class="w-full bg-slate-800/50 border border-white/10 rounded p-3 text-white focus:border-gold outline-none">
-                        <input type="tel" placeholder="Phone" required="" class="w-full bg-slate-800/50 border border-white/10 rounded p-3 text-white focus:border-gold outline-none">
+                        <input type="text" placeholder="Name" required class="w-full bg-slate-800/50 border border-white/10 rounded p-3 text-white focus:border-gold outline-none">
+                        <input type="tel" placeholder="Phone" required class="w-full bg-slate-800/50 border border-white/10 rounded p-3 text-white focus:border-gold outline-none">
                         <button type="submit" class="w-full btn-primary">Get Brochure</button>
                     </form>
                 </div>
@@ -480,7 +444,7 @@
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Villa A: The Azure (East Facing) -->
                 <div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-azure')">
-                    <div class="h-64 overflow-hidden relative watermark-wrapper">
+                    <div class="h-64 overflow-hidden relative">
                         <img src="assets/images/Easy facing villa type.1.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <span class="absolute top-4 right-4 bg-gold text-black text-xs font-bold px-3 py-1">EAST FACING</span>
                     </div>
@@ -492,7 +456,7 @@
                 </div>
                  <!-- Villa B: The Solis (West Facing) -->
                 <div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-solis')">
-                    <div class="h-64 overflow-hidden relative watermark-wrapper">
+                    <div class="h-64 overflow-hidden relative">
                          <img src="assets/images/West facing type_2.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <span class="absolute top-4 right-4 bg-white text-black text-xs font-bold px-3 py-1">WEST FACING</span>
                     </div>
@@ -504,7 +468,7 @@
                 </div>
                  <!-- Villa C: The Zenith (Corner) -->
                 <div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-zenith')">
-                    <div class="h-64 overflow-hidden relative watermark-wrapper">
+                    <div class="h-64 overflow-hidden relative">
                          <img src="assets/images/North facing type_2.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                         <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-3 py-1">CORNER</span>
                     </div>
@@ -519,7 +483,7 @@
 
         <!-- 🆕 DEDICATED VILLA PAGE: AZURE -->
         <section id="page-villa-azure" class="page-section container mx-auto px-0 py-0" style="display: none;">
-            <div class="relative h-[60vh] flex items-center justify-center watermark-wrapper">
+            <div class="relative h-[60vh] flex items-center justify-center">
                 <img src="assets/images/Easy facing villa type.1.webp" class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
                 <div class="relative z-10 text-center">
@@ -539,10 +503,10 @@
                             <li class="flex items-center gap-3"><i class="fas fa-leaf text-gold"></i> Private Terrace Garden</li>
                             <li class="flex items-center gap-3"><i class="fas fa-film text-gold"></i> Dedicated Home Theater Room</li>
                         </ul>
-                        <button onclick="route(event, 'loan-calculator')" class="btn-primary mt-8">Check Loan Options</button>
+                        <button onclick="route(event, 'contact')" class="btn-primary mt-8">Request Floor Plan & Price</button>
                     </div>
                     <div class="glass-panel p-4 rounded-xl">
-                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden watermark-wrapper">
+                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
                              <img src="assets/images/Balcony view.webp" class="w-full h-full object-cover opacity-50">
                         </div>
                     </div>
@@ -552,7 +516,7 @@
 
         <!-- 🆕 DEDICATED VILLA PAGE: SOLIS -->
         <section id="page-villa-solis" class="page-section container mx-auto px-0 py-0" style="display: none;">
-            <div class="relative h-[60vh] flex items-center justify-center watermark-wrapper">
+            <div class="relative h-[60vh] flex items-center justify-center">
                 <img src="assets/images/West facing type_2.webp" class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
                 <div class="relative z-10 text-center">
@@ -572,10 +536,10 @@
                             <li class="flex items-center gap-3"><i class="fas fa-utensils text-gold"></i> Open Kitchen with Island</li>
                             <li class="flex items-center gap-3"><i class="fas fa-couch text-gold"></i> Family Lounge on First Floor</li>
                         </ul>
-                        <button onclick="route(event, 'loan-calculator')" class="btn-primary mt-8">Check Loan Options</button>
+                        <button onclick="route(event, 'contact')" class="btn-primary mt-8">Request Floor Plan & Price</button>
                     </div>
                     <div class="glass-panel p-4 rounded-xl">
-                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden watermark-wrapper">
+                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
                              <img src="assets/images/Street Night View.webp" class="w-full h-full object-cover opacity-50">
                         </div>
                     </div>
@@ -585,7 +549,7 @@
 
         <!-- 🆕 DEDICATED VILLA PAGE: ZENITH -->
         <section id="page-villa-zenith" class="page-section container mx-auto px-0 py-0" style="display: none;">
-            <div class="relative h-[60vh] flex items-center justify-center watermark-wrapper">
+            <div class="relative h-[60vh] flex items-center justify-center">
                 <img src="assets/images/South facing villa-type-05.webp" class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
                 <div class="relative z-10 text-center">
@@ -603,12 +567,12 @@
                             <li class="flex items-center gap-3"><i class="fas fa-bed text-gold"></i> 5 Grand Suites</li>
                             <li class="flex items-center gap-3"><i class="fas fa-swimmer text-gold"></i> Private Plunge Pool</li>
                             <li class="flex items-center gap-3"><i class="fas fa-elevator text-gold"></i> Internal Lift Provision</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-glass-martini-alt text-gold"></i> Terrace Bar &amp; Lounge</li>
+                            <li class="flex items-center gap-3"><i class="fas fa-glass-martini-alt text-gold"></i> Terrace Bar & Lounge</li>
                         </ul>
-                        <button onclick="route(event, 'loan-calculator')" class="btn-primary mt-8">Check Loan Options</button>
+                        <button onclick="route(event, 'contact')" class="btn-primary mt-8">Request Floor Plan & Price</button>
                     </div>
                     <div class="glass-panel p-4 rounded-xl">
-                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden watermark-wrapper">
+                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
                              <img src="assets/images/ORTHO VIEW.webp" class="w-full h-full object-cover opacity-50">
                         </div>
                     </div>
@@ -627,28 +591,28 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <!-- Pool -->
-                <div onclick="route(event, 'amenity-pool')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden watermark-wrapper">
+                <div onclick="route(event, 'amenity-pool')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
                     <img src="assets/images/Swimming pool.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
                     <i class="fas fa-swimmer text-4xl text-gold mb-4 relative z-10"></i>
                     <h4 class="text-lg font-medium relative z-10">Infinity Pool</h4>
                     <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">View Plan</span>
                 </div>
                 <!-- Gym -->
-                <div onclick="route(event, 'amenity-gym')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden watermark-wrapper">
+                <div onclick="route(event, 'amenity-gym')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
                     <img src="assets/images/Gym.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
                     <i class="fas fa-dumbbell text-4xl text-gold mb-4 relative z-10"></i>
                     <h4 class="text-lg font-medium relative z-10">Sky Gym</h4>
                      <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">View Plan</span>
                 </div>
                 <!-- Club -->
-                <div onclick="route(event, 'amenity-club')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden watermark-wrapper">
+                <div onclick="route(event, 'amenity-club')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
                     <img src="assets/images/Clubhouse.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
                     <i class="fas fa-glass-cheers text-4xl text-gold mb-4 relative z-10"></i>
                     <h4 class="text-lg font-medium relative z-10">Clubhouse</h4>
                      <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">View Plan</span>
                 </div>
                 <!-- Gardens -->
-                <div class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square relative overflow-hidden watermark-wrapper">
+                <div class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square relative overflow-hidden">
                     <img src="assets/images/Landscape_1.webp" class="absolute inset-0 w-full h-full object-cover opacity-20">
                     <i class="fas fa-tree text-2xl text-gray-500 mb-4 relative z-10"></i>
                     <h4 class="text-lg font-medium text-gray-400 relative z-10">Zen Gardens</h4>
@@ -657,7 +621,7 @@
         </section>
 
         <section id="page-amenity-pool" class="page-section container mx-auto px-0 py-0" style="display: none;">
-             <div class="relative h-[50vh] watermark-wrapper">
+             <div class="relative h-[50vh]">
                  <img src="assets/images/Swimming pool.webp" class="w-full h-full object-cover">
                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h1 class="text-5xl font-serif text-white">Infinity Pool</h1></div>
              </div>
@@ -665,7 +629,7 @@
         </section>
         
         <section id="page-amenity-gym" class="page-section container mx-auto px-0 py-0" style="display: none;">
-             <div class="relative h-[50vh] watermark-wrapper">
+             <div class="relative h-[50vh]">
                  <img src="assets/images/Gym.webp" class="w-full h-full object-cover">
                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h1 class="text-5xl font-serif text-white">Sky Gym</h1></div>
              </div>
@@ -673,7 +637,7 @@
         </section>
 
         <section id="page-amenity-club" class="page-section container mx-auto px-0 py-0" style="display: none;">
-             <div class="relative h-[50vh] watermark-wrapper">
+             <div class="relative h-[50vh]">
                  <img src="assets/images/Clubhouse Night View.webp" class="w-full h-full object-cover">
                  <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h1 class="text-5xl font-serif text-white">Clubhouse</h1></div>
              </div>
@@ -681,8 +645,8 @@
                  <button onclick="route(event, 'amenities')" class="text-gold mb-4"><i class="fas fa-arrow-left"></i> Back</button>
                  <p class="text-gray-300 mb-6">15,000 Sft | Banquet Hall | Library | Indoor Games</p>
                  <div class="grid grid-cols-2 gap-4">
-                     <div class="watermark-wrapper"><img src="assets/images/Indoor games.webp" class="rounded-lg h-32 object-cover w-full"></div>
-                     <div class="watermark-wrapper"><img src="assets/images/Party hall.webp" class="rounded-lg h-32 object-cover w-full"></div>
+                     <div><img src="assets/images/Indoor games.webp" class="rounded-lg h-32 object-cover w-full"></div>
+                     <div><img src="assets/images/Party hall.webp" class="rounded-lg h-32 object-cover w-full"></div>
                  </div>
              </div>
         </section>
@@ -691,12 +655,141 @@
         <section id="page-gallery" class="page-section container mx-auto px-6 py-12" style="display: none;">
             <h2 class="text-4xl font-serif text-center mb-12">Visual Tour</h2>
             <div class="columns-1 md:columns-3 gap-6 space-y-6">
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer watermark-wrapper" onclick="openLightbox(this)"><img src="assets/images/Street Night View.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer watermark-wrapper" onclick="openLightbox(this)"><img src="assets/images/ORTHO VIEW.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer watermark-wrapper" onclick="openLightbox(this)"><img src="assets/images/South facing type_4.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer watermark-wrapper" onclick="openLightbox(this)"><img src="assets/images/South facing type_5.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer watermark-wrapper" onclick="openLightbox(this)"><img src="assets/images/Entrance.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer watermark-wrapper" onclick="openLightbox(this)"><img src="assets/images/South facing villa-type-05.webp" class="w-full rounded-lg"></div>
+                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/Street Night View.webp" class="w-full rounded-lg"></div>
+                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/ORTHO VIEW.webp" class="w-full rounded-lg"></div>
+                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/South facing type_4.webp" class="w-full rounded-lg"></div>
+                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/South facing type_5.webp" class="w-full rounded-lg"></div>
+                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/Entrance.webp" class="w-full rounded-lg"></div>
+                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/South facing villa-type-05.webp" class="w-full rounded-lg"></div>
+            </div>
+        </section>
+
+        <!-- 🆕 EMI CALCULATOR PAGE -->
+        <section id="page-emi" class="page-section container mx-auto px-6 py-12" style="display: none;">
+            <div class="text-center mb-12">
+                <span class="text-gold uppercase tracking-widest text-sm">Financial Planning</span>
+                <h2 class="text-4xl font-serif mt-2">EMI Calculator</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto mt-4">Calculate your monthly payments including down payment, interest rates, and documentation fees.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Left: Calculator Form -->
+                <div class="md:col-span-2">
+                    <div class="glass-panel p-8 rounded-2xl">
+                        <form id="emiForm">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-gray-300 mb-2">Property Price (₹)</label>
+                                    <input type="number" id="propertyPrice" value="25000000" class="emi-input" min="100000" step="100000">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-300 mb-2">Down Payment (%)</label>
+                                    <input type="range" id="downPaymentPercent" min="10" max="90" value="20" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer">
+                                    <div class="flex justify-between mt-2">
+                                        <span class="text-xs text-gray-400">10%</span>
+                                        <span id="downPaymentValue" class="text-gold">20%</span>
+                                        <span class="text-xs text-gray-400">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label class="block text-gray-300 mb-2">Loan Tenure (Years)</label>
+                                    <select id="loanTenure" class="emi-input">
+                                        <option value="5">5 Years</option>
+                                        <option value="10">10 Years</option>
+                                        <option value="15" selected>15 Years</option>
+                                        <option value="20">20 Years</option>
+                                        <option value="25">25 Years</option>
+                                        <option value="30">30 Years</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label class="block text-gray-300 mb-2">Interest Rate (% p.a.)</label>
+                                    <input type="number" id="interestRate" value="8.5" step="0.1" min="6" max="15" class="emi-input">
+                                </div>
+                            </div>
+
+                            <div class="grid md:grid-cols-2 gap-6 mb-8">
+                                <div>
+                                    <label class="block text-gray-300 mb-2">Documentation Fees (₹)</label>
+                                    <input type="number" id="docFees" value="50000" class="emi-input" min="0" step="5000">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-300 mb-2">Loan Type</label>
+                                    <select id="loanType" class="emi-input">
+                                        <option value="home">Home Loan</option>
+                                        <option value="personal">Personal Loan</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <button type="button" onclick="calculateEMI()" class="w-full btn-primary py-4">Calculate EMI</button>
+                        </form>
+                    </div>
+
+                    <!-- Bank Selection -->
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-serif text-white mb-6">Select Your Bank</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4" id="bankSelection">
+                            <!-- Banks will be populated by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Results & CTA -->
+                <div class="space-y-6">
+                    <!-- Results Card -->
+                    <div class="emi-result-card glass-panel p-8 rounded-2xl">
+                        <h3 class="text-2xl font-serif text-white mb-6">Your EMI Breakdown</h3>
+                        <div class="space-y-4" id="emiResults">
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Loan Amount:</span>
+                                <span id="loanAmount" class="text-white font-bold">₹0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Down Payment:</span>
+                                <span id="downPayment" class="text-white font-bold">₹0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Monthly EMI:</span>
+                                <span id="monthlyEMI" class="text-2xl text-gold font-bold">₹0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Total Interest:</span>
+                                <span id="totalInterest" class="text-white font-bold">₹0</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-gray-300">Total Payment:</span>
+                                <span id="totalPayment" class="text-white font-bold">₹0</span>
+                            </div>
+                            <div class="flex justify-between border-t border-white/10 pt-4">
+                                <span class="text-gray-300">Documentation Fees:</span>
+                                <span id="totalDocFees" class="text-white font-bold">₹0</span>
+                            </div>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="mt-8 space-y-4">
+                            <a href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20loan%20options%20for%20Hiwa%20Nirvara" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg font-medium transition">
+                                <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
+                            </a>
+                            <a href="tel:+919876543210" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium transition">
+                                <i class="fas fa-phone mr-2"></i> Call Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Bank Profile Card -->
+                    <div class="glass-panel p-6 rounded-2xl">
+                        <h3 class="text-xl font-serif text-white mb-4">Bank Interest Rates</h3>
+                        <div class="space-y-3" id="bankRates">
+                            <!-- Bank rates will be populated by JavaScript -->
+                        </div>
+                        <p class="text-gray-400 text-sm mt-4">*Rates are subject to change. Contact bank for latest rates.</p>
+                    </div>
+                </div>
             </div>
         </section>
         
@@ -707,7 +800,7 @@
                 <h2 class="text-4xl font-serif mt-2">Narapally, Secunderabad</h2>
             </div>
             <div class="glass-panel p-2 rounded-xl h-[400px] mb-12 relative overflow-hidden group">
-                 <div class="w-full h-full watermark-wrapper">
+                 <div class="w-full h-full">
                     <img src="assets/images/Aerial view.webp" class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition duration-700">
                  </div>
                  <div class="absolute inset-0 flex items-center justify-center">
@@ -718,242 +811,10 @@
             </div>
         </section>
 
-        <!-- 🆕 LOAN CALCULATOR PAGE -->
-        <section id="page-loan-calculator" class="page-section container mx-auto px-6 py-12" style="display: none;">
-            <div class="text-center mb-16">
-                <span class="text-gold uppercase tracking-widest text-sm">Financial Planning</span>
-                <h2 class="text-4xl font-serif mt-2">Smart EMI Calculator</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto mt-4">Calculate your monthly EMIs, explore bank options, and get personalized loan assistance</p>
-            </div>
-
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Left Column: Calculator Form -->
-                <div class="glass-panel p-8 rounded-2xl">
-                    <h3 class="text-2xl font-serif text-white mb-6">Calculate Your EMI</h3>
-                    
-                    <!-- Property Price -->
-                    <div class="mb-6">
-                        <label class="block text-gray-300 mb-2">Property Price (₹)</label>
-                        <div class="flex items-center space-x-4">
-                            <input type="range" id="propertyPrice" min="5000000" max="50000000" step="500000" value="15000000" class="w-full emi-slider">
-                            <input type="number" id="propertyPriceInput" class="w-32 bg-slate-800/50 border border-white/10 rounded p-2 text-white text-center" value="15000000">
-                        </div>
-                        <div class="flex justify-between text-xs text-gray-400 mt-1">
-                            <span>50L</span>
-                            <span>1Cr</span>
-                            <span>2Cr</span>
-                            <span>3Cr</span>
-                            <span>5Cr</span>
-                        </div>
-                    </div>
-
-                    <!-- Down Payment -->
-                    <div class="mb-6">
-                        <label class="block text-gray-300 mb-2">Down Payment</label>
-                        <div class="flex items-center space-x-4">
-                            <input type="range" id="downPaymentPercent" min="10" max="90" step="5" value="20" class="w-full emi-slider">
-                            <div class="relative w-32">
-                                <input type="number" id="downPaymentAmount" class="w-full bg-slate-800/50 border border-white/10 rounded p-2 text-white text-center" value="3000000">
-                                <span class="absolute right-3 top-2 text-gray-400">₹</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between text-xs text-gray-400 mt-1">
-                            <span>10%</span>
-                            <span>30%</span>
-                            <span>50%</span>
-                            <span>70%</span>
-                            <span>90%</span>
-                        </div>
-                    </div>
-
-                    <!-- Loan Tenure -->
-                    <div class="mb-6">
-                        <label class="block text-gray-300 mb-2">Loan Tenure (Years)</label>
-                        <div class="flex items-center space-x-4">
-                            <input type="range" id="loanTenure" min="5" max="30" step="1" value="20" class="w-full emi-slider">
-                            <input type="number" id="loanTenureInput" class="w-32 bg-slate-800/50 border border-white/10 rounded p-2 text-white text-center" value="20">
-                        </div>
-                        <div class="flex justify-between text-xs text-gray-400 mt-1">
-                            <span>5Y</span>
-                            <span>10Y</span>
-                            <span>15Y</span>
-                            <span>20Y</span>
-                            <span>30Y</span>
-                        </div>
-                    </div>
-
-                    <!-- Interest Rate -->
-                    <div class="mb-8">
-                        <label class="block text-gray-300 mb-2">Interest Rate (% p.a.)</label>
-                        <div class="flex items-center space-x-4">
-                            <input type="range" id="interestRate" min="6" max="15" step="0.1" value="8.5" class="w-full emi-slider">
-                            <div class="relative w-32">
-                                <input type="number" id="interestRateInput" step="0.1" class="w-full bg-slate-800/50 border border-white/10 rounded p-2 text-white text-center" value="8.5">
-                                <span class="absolute right-3 top-2 text-gray-400">%</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between text-xs text-gray-400 mt-1">
-                            <span>6%</span>
-                            <span>8%</span>
-                            <span>10%</span>
-                            <span>12%</span>
-                            <span>15%</span>
-                        </div>
-                    </div>
-
-                    <button onclick="calculateEMI()" class="w-full btn-primary">Calculate EMI</button>
-                </div>
-
-                <!-- Right Column: Results -->
-                <div class="glass-panel p-8 rounded-2xl">
-                    <h3 class="text-2xl font-serif text-white mb-6">Your EMI Breakdown</h3>
-                    
-                    <!-- Results Display -->
-                    <div class="space-y-6">
-                        <div class="flex justify-between items-center border-b border-white/10 pb-4">
-                            <span class="text-gray-300">Loan Amount</span>
-                            <span id="loanAmountResult" class="text-2xl font-bold text-gold">₹1,20,00,000</span>
-                        </div>
-                        
-                        <div class="grid grid-cols-2 gap-4">
-                            <div class="text-center p-4 bg-black/30 rounded-lg">
-                                <div class="text-gray-400 text-sm">Monthly EMI</div>
-                                <div id="monthlyEMI" class="text-2xl font-bold text-white mt-2">₹1,04,542</div>
-                            </div>
-                            <div class="text-center p-4 bg-black/30 rounded-lg">
-                                <div class="text-gray-400 text-sm">Total Interest</div>
-                                <div id="totalInterest" class="text-2xl font-bold text-white mt-2">₹1,09,00,080</div>
-                            </div>
-                        </div>
-
-                        <div class="border-t border-white/10 pt-4">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">Total Payment</span>
-                                <span id="totalPayment" class="text-lg font-medium text-white">₹2,29,00,080</span>
-                            </div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-gray-300">Documentation Fees*</span>
-                                <span id="docFees" class="text-lg font-medium text-white">₹25,000</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <span class="text-gray-300">Processing Fees*</span>
-                                <span id="processingFees" class="text-lg font-medium text-white">₹60,000</span>
-                            </div>
-                        </div>
-
-                        <!-- CTA Buttons -->
-                        <div class="grid grid-cols-2 gap-4 mt-8">
-                            <a href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20loan%20options%20for%20Hiwa%20Nirvara" target="_blank" class="bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                                <i class="fab fa-whatsapp"></i> WhatsApp
-                            </a>
-                            <a href="tel:+919876543210" class="bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                                <i class="fas fa-phone"></i> Call Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bank Selection Section -->
-            <div class="mt-16">
-                <h3 class="text-2xl font-serif text-white mb-8 text-center">Select Your Preferred Bank</h3>
-                
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                    <div class="bank-card glass-panel p-4 rounded-xl text-center cursor-pointer" onclick="selectBank('sbi')" id="bank-sbi">
-                        <div class="h-16 mb-3 flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                                <span class="text-blue-800 font-bold">SBI</span>
-                            </div>
-                        </div>
-                        <h4 class="font-medium text-white">State Bank of India</h4>
-                        <p class="text-gold text-sm mt-1">8.4% p.a.</p>
-                    </div>
-                    
-                    <div class="bank-card glass-panel p-4 rounded-xl text-center cursor-pointer" onclick="selectBank('hdfc')" id="bank-hdfc">
-                        <div class="h-16 mb-3 flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center">
-                                <span class="text-white font-bold">HDFC</span>
-                            </div>
-                        </div>
-                        <h4 class="font-medium text-white">HDFC Bank</h4>
-                        <p class="text-gold text-sm mt-1">8.5% p.a.</p>
-                    </div>
-                    
-                    <div class="bank-card glass-panel p-4 rounded-xl text-center cursor-pointer selected" onclick="selectBank('icici')" id="bank-icici">
-                        <div class="h-16 mb-3 flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center">
-                                <span class="text-white font-bold">ICICI</span>
-                            </div>
-                        </div>
-                        <h4 class="font-medium text-white">ICICI Bank</h4>
-                        <p class="text-gold text-sm mt-1">8.5% p.a.</p>
-                    </div>
-                    
-                    <div class="bank-card glass-panel p-4 rounded-xl text-center cursor-pointer" onclick="selectBank('axis')" id="bank-axis">
-                        <div class="h-16 mb-3 flex items-center justify-center">
-                            <div class="w-12 h-12 rounded-full bg-red-600 flex items-center justify-center">
-                                <span class="text-white font-bold">AXIS</span>
-                            </div>
-                        </div>
-                        <h4 class="font-medium text-white">Axis Bank</h4>
-                        <p class="text-gold text-sm mt-1">8.7% p.a.</p>
-                    </div>
-                </div>
-
-                <!-- Bank Details Profile Card -->
-                <div id="bank-profile" class="glass-panel p-6 rounded-2xl">
-                    <div class="flex justify-between items-center mb-6">
-                        <div>
-                            <h3 class="text-xl font-serif text-white">ICICI Bank Home Loan</h3>
-                            <p class="text-gray-400">Preferred Partner for Hiwa Nirvara</p>
-                        </div>
-                        <div class="text-right">
-                            <div class="text-3xl font-bold text-gold">8.5%</div>
-                            <div class="text-gray-400 text-sm">Interest Rate p.a.</div>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                        <div class="text-center">
-                            <div class="text-gray-400 text-sm">Processing Fee</div>
-                            <div class="text-white font-medium">0.5%</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-gray-400 text-sm">Max Tenure</div>
-                            <div class="text-white font-medium">30 Years</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-gray-400 text-sm">Prepayment Charges</div>
-                            <div class="text-white font-medium">Nil</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-gray-400 text-sm">Max Loan Amount</div>
-                            <div class="text-white font-medium">₹10 Crores</div>
-                        </div>
-                    </div>
-                    
-                    <div class="mt-6 pt-6 border-t border-white/10">
-                        <h4 class="text-white font-medium mb-3">Quick Actions:</h4>
-                        <div class="flex flex-col sm:flex-row gap-4">
-                            <a href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20ICICI%20Bank%20home%20loan%20for%20Hiwa%20Nirvara" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                                <i class="fab fa-whatsapp"></i> Apply via WhatsApp
-                            </a>
-                            <a href="tel:+919876543210" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                                <i class="fas fa-phone"></i> Call Loan Officer
-                            </a>
-                            <button onclick="downloadLoanApplication()" class="flex-1 bg-gold hover:bg-gold/80 text-black text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                                <i class="fas fa-download"></i> Download Form
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- TERMS & CONDITIONS PAGE -->
         <section id="page-terms" class="page-section container mx-auto px-6 py-12" style="display: none;">
             <div class="glass-panel p-8 rounded-2xl max-w-4xl mx-auto">
-                <h1 class="text-3xl font-serif text-gold mb-6">Terms &amp; Conditions</h1>
+                <h1 class="text-3xl font-serif text-gold mb-6">Terms & Conditions</h1>
                 <div class="text-gray-300 text-sm space-y-4">
                     <p><strong>1. Introduction:</strong> Welcome to Hiwa Nirvara. By accessing this website, you agree to these terms.</p>
                     <p><strong>2. Accuracy of Information:</strong> The visuals, dimensions, and specifications are indicative and subject to change by the developer.</p>
@@ -977,26 +838,14 @@
                             <div class="flex gap-4"><div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold"><i class="fas fa-envelope"></i></div><div><h5 class="text-white font-medium">Email</h5><p class="text-gray-400 text-sm">sales@hiwanirvara.com</p></div></div>
                         </div>
                     </div>
-                    <div class="mt-8">
-                        <h5 class="text-white font-medium mb-3">Loan Assistance</h5>
-                        <button onclick="route(event, 'loan-calculator')" class="w-full py-3 border border-gold text-gold hover:bg-gold hover:text-black transition uppercase text-sm tracking-wider">Calculate Your EMI</button>
-                    </div>
                 </div>
                 <!-- Form -->
                 <div class="md:w-3/5 p-10 bg-white/5 relative">
                     <h3 class="text-xl text-gold font-serif mb-2">Register Interest</h3>
                     <form id="enquiryForm" class="space-y-5">
-                        <input type="text" name="user_name" placeholder="Your Name" required="" class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
-                        <input type="tel" name="user_phone" placeholder="Phone Number" required="" class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
-                        <input type="email" name="user_email" placeholder="Email Address" required="" class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
-                        <select name="interest_type" class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
-                            <option value="" disabled="" selected="">Interested in</option>
-                            <option value="3bhk">3 BHK Villa</option>
-                            <option value="4bhk">4 BHK Villa</option>
-                            <option value="5bhk">5 BHK Villa</option>
-                            <option value="loan">Loan Assistance</option>
-                            <option value="site_visit">Site Visit</option>
-                        </select>
+                        <input type="text" name="user_name" placeholder="Your Name" required class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+                        <input type="tel" name="user_phone" placeholder="Phone Number" required class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+                        <input type="email" name="user_email" placeholder="Email Address" required class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
                         <button type="submit" class="w-full btn-primary mt-4">Submit Enquiry</button>
                     </form>
                 </div>
@@ -1023,7 +872,7 @@
              <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
                 <p>© 2024 Hiwa Nirvara. All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
-                    <a href="#terms" onclick="route(event, 'terms')" class="hover:text-gold">Terms &amp; Conditions</a>
+                    <a href="#terms" onclick="route(event, 'terms')" class="hover:text-gold">Terms & Conditions</a>
                     <a href="#" class="hover:text-gold">Privacy Policy</a>
                     <span>RERA No: P0220000XXXX</span>
                 </div>
@@ -1031,12 +880,9 @@
         </div>
     </footer>
 
-    <!-- WhatsApp & Call Floating Icons -->
+    <!-- WhatsApp & Chatbot -->
     <a href="https://wa.me/919876543210" target="_blank" class="float-icon whatsapp-icon">
         <i class="fab fa-whatsapp"></i>
-    </a>
-    <a href="tel:+919876543210" class="float-icon phone-icon">
-        <i class="fas fa-phone"></i>
     </a>
     
     <!-- LIGHTBOX -->
@@ -1047,6 +893,100 @@
 
     <!-- ⚙️ LOGIC -->
     <script>
+        // Bank data with interest rates
+        const banks = [
+            { id: 'sbi', name: 'State Bank of India', homeLoanRate: 8.4, personalLoanRate: 10.5, color: 'bg-blue-600', selected: true },
+            { id: 'hdfc', name: 'HDFC Bank', homeLoanRate: 8.5, personalLoanRate: 10.8, color: 'bg-blue-800', selected: false },
+            { id: 'icici', name: 'ICICI Bank', homeLoanRate: 8.6, personalLoanRate: 11.0, color: 'bg-orange-600', selected: false },
+            { id: 'axis', name: 'Axis Bank', homeLoanRate: 8.7, personalLoanRate: 11.2, color: 'bg-red-600', selected: false }
+        ];
+
+        // Initialize bank selection and rates
+        function initializeBanks() {
+            const bankSelection = document.getElementById('bankSelection');
+            const bankRates = document.getElementById('bankRates');
+            
+            bankSelection.innerHTML = '';
+            bankRates.innerHTML = '';
+            
+            banks.forEach(bank => {
+                // Bank selection cards
+                const bankCard = document.createElement('div');
+                bankCard.className = `bank-card glass-panel p-4 rounded-xl text-center cursor-pointer ${bank.selected ? 'selected' : ''}`;
+                bankCard.innerHTML = `
+                    <div class="w-10 h-10 rounded-full ${bank.color} flex items-center justify-center mx-auto mb-2">
+                        <i class="fas fa-university text-white"></i>
+                    </div>
+                    <h4 class="text-sm font-medium">${bank.name}</h4>
+                    <p class="text-xs text-gray-400 mt-1">Home: ${bank.homeLoanRate}%</p>
+                `;
+                bankCard.onclick = () => selectBank(bank.id);
+                bankSelection.appendChild(bankCard);
+                
+                // Bank rates list
+                const rateItem = document.createElement('div');
+                rateItem.className = 'flex justify-between items-center';
+                rateItem.innerHTML = `
+                    <span class="text-gray-300">${bank.name}</span>
+                    <span class="text-gold font-medium">${bank.homeLoanRate}% - ${bank.personalLoanRate}%</span>
+                `;
+                bankRates.appendChild(rateItem);
+            });
+        }
+
+        // Select a bank
+        function selectBank(bankId) {
+            banks.forEach(bank => {
+                bank.selected = bank.id === bankId;
+                if (bank.selected) {
+                    document.getElementById('interestRate').value = bank.homeLoanRate;
+                }
+            });
+            initializeBanks();
+            calculateEMI();
+        }
+
+        // EMI Calculation Formula
+        function calculateEMI() {
+            const propertyPrice = parseFloat(document.getElementById('propertyPrice').value) || 25000000;
+            const downPaymentPercent = parseFloat(document.getElementById('downPaymentPercent').value) || 20;
+            const loanTenure = parseFloat(document.getElementById('loanTenure').value) || 15;
+            const interestRate = parseFloat(document.getElementById('interestRate').value) || 8.5;
+            const docFees = parseFloat(document.getElementById('docFees').value) || 50000;
+            const loanType = document.getElementById('loanType').value;
+            
+            const downPayment = (propertyPrice * downPaymentPercent) / 100;
+            const loanAmount = propertyPrice - downPayment;
+            const monthlyInterestRate = interestRate / 12 / 100;
+            const months = loanTenure * 12;
+            
+            // EMI Formula: [P x R x (1+R)^N]/[(1+R)^N-1]
+            const emi = loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, months) / 
+                       (Math.pow(1 + monthlyInterestRate, months) - 1);
+            
+            const totalPayment = emi * months;
+            const totalInterest = totalPayment - loanAmount;
+            const totalWithFees = totalPayment + docFees + downPayment;
+            
+            // Update results
+            document.getElementById('loanAmount').textContent = '₹' + formatNumber(loanAmount);
+            document.getElementById('downPayment').textContent = '₹' + formatNumber(downPayment);
+            document.getElementById('monthlyEMI').textContent = '₹' + formatNumber(Math.round(emi));
+            document.getElementById('totalInterest').textContent = '₹' + formatNumber(Math.round(totalInterest));
+            document.getElementById('totalPayment').textContent = '₹' + formatNumber(Math.round(totalPayment));
+            document.getElementById('totalDocFees').textContent = '₹' + formatNumber(docFees);
+            
+            // Update loan type in CTA message
+            const whatsappBtn = document.querySelector('a[href*="whatsapp"]');
+            const loanText = loanType === 'home' ? 'home loan' : 'personal loan';
+            whatsappBtn.href = `https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20${loanText}%20options%20for%20Hiwa%20Nirvara.%20My%20estimated%20EMI%20is%20₹${Math.round(emi)}%20per%20month`;
+        }
+
+        // Format numbers with commas
+        function formatNumber(num) {
+            return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+
         // --- Router Logic ---
         function route(event, pageId) {
             if(event) event.preventDefault();
@@ -1057,18 +997,21 @@
             // 1. Hide all pages
             document.querySelectorAll('.page-section').forEach(el => {
                 el.classList.remove('active');
-                el.style.display = 'none'; // Force hide
+                el.style.display = 'none';
             });
 
             // 2. Show target page
             const target = document.getElementById(`page-${pageId}`);
             if(target) {
-                target.style.display = 'block'; // Force show
-                // Small delay to allow display:block to apply before adding active class for fade-in
+                target.style.display = 'block';
                 setTimeout(() => target.classList.add('active'), 10);
                 window.scrollTo(0,0);
-            } else {
-                console.error("Page not found:", pageId);
+                
+                // Initialize EMI calculator if on EMI page
+                if(pageId === 'emi') {
+                    initializeBanks();
+                    calculateEMI();
+                }
             }
 
             // 3. Update Navigation State
@@ -1076,11 +1019,6 @@
                 link.classList.remove('active');
                 if(link.getAttribute('href') === `#${pageId}`) link.classList.add('active');
             });
-
-            // If loan calculator page, initialize calculator
-            if(pageId === 'loan-calculator') {
-                initializeEMICalculator();
-            }
         }
 
         // Handle Back/Forward Browser Buttons
@@ -1114,6 +1052,11 @@
             }, 200);
         }
 
+        // Update down payment value display
+        document.getElementById('downPaymentPercent').addEventListener('input', function() {
+            document.getElementById('downPaymentValue').textContent = this.value + '%';
+        });
+
         // --- Lightbox Logic ---
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
@@ -1138,241 +1081,6 @@
             setTimeout(() => lightbox.classList.add('hidden'), 300);
         }
 
-        // --- EMI Calculator Logic ---
-        let selectedBank = 'icici'; // Default selected bank
-        const bankData = {
-            'sbi': {
-                name: 'State Bank of India',
-                interestRate: 8.4,
-                processingFeePercent: 0.5,
-                maxTenure: 30,
-                prepaymentCharges: 'Nil after 1 year',
-                maxLoanAmount: '₹10 Crores',
-                color: 'blue'
-            },
-            'hdfc': {
-                name: 'HDFC Bank',
-                interestRate: 8.5,
-                processingFeePercent: 0.5,
-                maxTenure: 30,
-                prepaymentCharges: 'Nil',
-                maxLoanAmount: '₹15 Crores',
-                color: 'blue'
-            },
-            'icici': {
-                name: 'ICICI Bank',
-                interestRate: 8.5,
-                processingFeePercent: 0.5,
-                maxTenure: 30,
-                prepaymentCharges: 'Nil',
-                maxLoanAmount: '₹10 Crores',
-                color: 'yellow'
-            },
-            'axis': {
-                name: 'Axis Bank',
-                interestRate: 8.7,
-                processingFeePercent: 0.55,
-                maxTenure: 30,
-                prepaymentCharges: '2% before 3 years',
-                maxLoanAmount: '₹5 Crores',
-                color: 'red'
-            }
-        };
-
-        function initializeEMICalculator() {
-            // Set up slider interactions
-            const propertyPriceSlider = document.getElementById('propertyPrice');
-            const propertyPriceInput = document.getElementById('propertyPriceInput');
-            const downPaymentSlider = document.getElementById('downPaymentPercent');
-            const downPaymentInput = document.getElementById('downPaymentAmount');
-            const loanTenureSlider = document.getElementById('loanTenure');
-            const loanTenureInput = document.getElementById('loanTenureInput');
-            const interestRateSlider = document.getElementById('interestRate');
-            const interestRateInput = document.getElementById('interestRateInput');
-
-            // Sync sliders with inputs
-            propertyPriceSlider.addEventListener('input', function() {
-                propertyPriceInput.value = this.value;
-                updateDownPayment();
-                calculateEMI();
-            });
-
-            propertyPriceInput.addEventListener('input', function() {
-                propertyPriceSlider.value = this.value;
-                updateDownPayment();
-                calculateEMI();
-            });
-
-            downPaymentSlider.addEventListener('input', function() {
-                const propertyPrice = parseFloat(propertyPriceInput.value);
-                const downPaymentPercent = parseFloat(this.value);
-                const downPaymentAmount = (propertyPrice * downPaymentPercent) / 100;
-                downPaymentInput.value = Math.round(downPaymentAmount);
-                calculateEMI();
-            });
-
-            downPaymentInput.addEventListener('input', function() {
-                const propertyPrice = parseFloat(propertyPriceInput.value);
-                const downPaymentAmount = parseFloat(this.value);
-                const downPaymentPercent = (downPaymentAmount / propertyPrice) * 100;
-                downPaymentSlider.value = Math.min(Math.max(downPaymentPercent, 10), 90);
-                calculateEMI();
-            });
-
-            loanTenureSlider.addEventListener('input', function() {
-                loanTenureInput.value = this.value;
-                calculateEMI();
-            });
-
-            loanTenureInput.addEventListener('input', function() {
-                loanTenureSlider.value = this.value;
-                calculateEMI();
-            });
-
-            interestRateSlider.addEventListener('input', function() {
-                interestRateInput.value = this.value;
-                calculateEMI();
-            });
-
-            interestRateInput.addEventListener('input', function() {
-                interestRateSlider.value = this.value;
-                calculateEMI();
-            });
-
-            // Calculate initial EMI
-            calculateEMI();
-        }
-
-        function updateDownPayment() {
-            const propertyPrice = parseFloat(document.getElementById('propertyPriceInput').value);
-            const downPaymentPercent = parseFloat(document.getElementById('downPaymentPercent').value);
-            const downPaymentAmount = (propertyPrice * downPaymentPercent) / 100;
-            document.getElementById('downPaymentAmount').value = Math.round(downPaymentAmount);
-        }
-
-        function calculateEMI() {
-            // Get input values
-            const propertyPrice = parseFloat(document.getElementById('propertyPriceInput').value);
-            const downPayment = parseFloat(document.getElementById('downPaymentAmount').value);
-            const loanTenureYears = parseFloat(document.getElementById('loanTenureInput').value);
-            let interestRate = parseFloat(document.getElementById('interestRateInput').value);
-
-            // Calculate loan amount
-            const loanAmount = propertyPrice - downPayment;
-            
-            // Convert years to months
-            const loanTenureMonths = loanTenureYears * 12;
-            
-            // Convert annual interest rate to monthly
-            const monthlyInterestRate = interestRate / 12 / 100;
-            
-            // Calculate EMI using formula: EMI = P × r × (1 + r)^n / ((1 + r)^n - 1)
-            const emi = loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, loanTenureMonths) / 
-                       (Math.pow(1 + monthlyInterestRate, loanTenureMonths) - 1);
-            
-            // Calculate total payment and interest
-            const totalPayment = emi * loanTenureMonths;
-            const totalInterest = totalPayment - loanAmount;
-            
-            // Calculate fees based on selected bank
-            const bank = bankData[selectedBank];
-            const processingFees = (loanAmount * bank.processingFeePercent) / 100;
-            const documentationFees = 25000; // Fixed documentation fees
-            
-            // Update results
-            document.getElementById('loanAmountResult').textContent = formatCurrency(loanAmount);
-            document.getElementById('monthlyEMI').textContent = formatCurrency(Math.round(emi));
-            document.getElementById('totalInterest').textContent = formatCurrency(Math.round(totalInterest));
-            document.getElementById('totalPayment').textContent = formatCurrency(Math.round(totalPayment));
-            document.getElementById('docFees').textContent = formatCurrency(documentationFees);
-            document.getElementById('processingFees').textContent = formatCurrency(Math.round(processingFees));
-        }
-
-        function selectBank(bankId) {
-            // Update selected bank
-            selectedBank = bankId;
-            
-            // Update UI
-            document.querySelectorAll('.bank-card').forEach(card => {
-                card.classList.remove('selected');
-            });
-            document.getElementById(`bank-${bankId}`).classList.add('selected');
-            
-            // Update interest rate
-            const bank = bankData[bankId];
-            document.getElementById('interestRateInput').value = bank.interestRate;
-            document.getElementById('interestRate').value = bank.interestRate;
-            
-            // Update bank profile
-            updateBankProfile(bank);
-            
-            // Recalculate EMI
-            calculateEMI();
-        }
-
-        function updateBankProfile(bank) {
-            const profileDiv = document.getElementById('bank-profile');
-            profileDiv.innerHTML = `
-                <div class="flex justify-between items-center mb-6">
-                    <div>
-                        <h3 class="text-xl font-serif text-white">${bank.name} Home Loan</h3>
-                        <p class="text-gray-400">Preferred Partner for Hiwa Nirvara</p>
-                    </div>
-                    <div class="text-right">
-                        <div class="text-3xl font-bold text-gold">${bank.interestRate}%</div>
-                        <div class="text-gray-400 text-sm">Interest Rate p.a.</div>
-                    </div>
-                </div>
-                
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <div class="text-center">
-                        <div class="text-gray-400 text-sm">Processing Fee</div>
-                        <div class="text-white font-medium">${bank.processingFeePercent}%</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-gray-400 text-sm">Max Tenure</div>
-                        <div class="text-white font-medium">${bank.maxTenure} Years</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-gray-400 text-sm">Prepayment Charges</div>
-                        <div class="text-white font-medium">${bank.prepaymentCharges}</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-gray-400 text-sm">Max Loan Amount</div>
-                        <div class="text-white font-medium">${bank.maxLoanAmount}</div>
-                    </div>
-                </div>
-                
-                <div class="mt-6 pt-6 border-t border-white/10">
-                    <h4 class="text-white font-medium mb-3">Quick Actions:</h4>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20${encodeURIComponent(bank.name)}%20home%20loan%20for%20Hiwa%20Nirvara" 
-                           target="_blank" 
-                           class="flex-1 bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                            <i class="fab fa-whatsapp"></i> Apply via WhatsApp
-                        </a>
-                        <a href="tel:+919876543210" 
-                           class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                            <i class="fas fa-phone"></i> Call Loan Officer
-                        </a>
-                        <button onclick="downloadLoanApplication()" 
-                           class="flex-1 bg-gold hover:bg-gold/80 text-black text-center py-3 rounded-lg transition flex items-center justify-center gap-2">
-                            <i class="fas fa-download"></i> Download Form
-                        </button>
-                    </div>
-                </div>
-            `;
-        }
-
-        function downloadLoanApplication() {
-            alert('Loan application form download initiated. Our executive will contact you shortly.');
-            // In production, this would trigger a file download
-        }
-
-        function formatCurrency(amount) {
-            return '₹' + amount.toLocaleString('en-IN');
-        }
-
         // --- Initialization ---
         document.addEventListener('DOMContentLoaded', () => {
             // 1. Handle Initial Route
@@ -1390,7 +1098,7 @@
                     btn.innerText = "Sending...";
                     btn.disabled = true;
 
-                    // Simulate sending (Replace with emailjs.sendForm logic if needed)
+                    // Simulate sending
                     setTimeout(() => {
                         alert("Enquiry Sent! We will contact you shortly.");
                         this.reset();
@@ -1402,18 +1110,14 @@
                     }, 1500);
                 });
             });
+
+            // 3. Initialize EMI Calculator events
+            const emiInputs = ['propertyPrice', 'downPaymentPercent', 'loanTenure', 'interestRate', 'docFees', 'loanType'];
+            emiInputs.forEach(id => {
+                document.getElementById(id).addEventListener('input', calculateEMI);
+                document.getElementById(id).addEventListener('change', calculateEMI);
+            });
         });
-
-        // --- Tawk.io Integration ---
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-        s1.async=true;
-        s1.src='https://embed.tawk.to/YOUR_TAWK_ID/default'; // REPLACE WITH YOUR ID
-        s1.charset='UTF-8';
-        s1.setAttribute('crossorigin','*');
-        s0.parentNode.insertBefore(s1,s0);
-        })();
     </script>
-
-</body></html>
+</body>
+</html>
