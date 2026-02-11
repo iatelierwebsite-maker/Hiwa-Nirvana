@@ -794,25 +794,14 @@
         </section>
         
         <!-- 8️⃣ LOCATION PAGE -->
-        <section id="page-location" class="page-section container mx-auto px-6 py-12" style="display: none;">    <div class="text-center mb-12">        <span class="text-gold uppercase tracking-widest text-sm">Connectivity</span>        <h2 class="text-4xl font-serif mt-2">Narapally, Secunderabad</h2>    </div>
-    <div class="glass-panel p-2 rounded-xl h-[400px] mb-12 relative overflow-hidden group">                <!-- Background Image -->        <div class="w-full h-full">            <img src="assets/images/Aerial view.webp"                  class="w-full h-full object-cover opacity-70 group-hover:scale-105 transition duration-700"                 loading="lazy">        </div>
-        <!-- Google Maps Button -->        <div class="absolute inset-0 flex items-center justify-center">            <a             href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=17.412439912830564,78.63160475643662&travelmode=driving"            target="_blank"            class="glass-card px-6 py-3 rounded-full text-white hover:text-gold flex items-center gap-2 transition-all duration-300 hover:scale-105">                <i class="fas fa-map-marker-alt text-red-500"></i>                 Open in Google Maps            </a>        </div>
-    </div></section>
-
-        <!-- TERMS & CONDITIONS PAGE -->
-        <section id="page-terms" class="page-section container mx-auto px-6 py-12" style="display: none;">
-            <div class="glass-panel p-8 rounded-2xl max-w-4xl mx-auto">
-                <h1 class="text-3xl font-serif text-gold mb-6">Terms & Conditions</h1>
-                <div class="text-gray-300 text-sm space-y-4">
-                    <p><strong>1. Introduction:</strong> Welcome to Hiwa Nirvana. By accessing this website, you agree to these terms.</p>
-                    <p><strong>2. Accuracy of Information:</strong> The visuals, dimensions, and specifications are indicative and subject to change by the developer.</p>
-                    <p><strong>3. Intellectual Property:</strong> All content, images, and logos are the property of Hiwa Nirvana.</p>
-                    <p><strong>4. Limitation of Liability:</strong> Hiwa Nirvana is not liable for any damages arising from the use of this website.</p>
-                    <p><strong>5. RERA:</strong> This project is registered under TSRERA. Registration No: P0220000XXXX.</p>
-                    <button onclick="route(event, 'home')" class="mt-6 text-gold underline">Back to Home</button>
-                </div>
-            </div>
-        </section>
+        <section id="page-location" class="page-section container mx-auto px-6 py-12 relative" style="display: none;">
+    <div class="text-center mb-12">        <span class="text-gold uppercase tracking-widest text-sm">Connectivity</span>        <h2 class="text-4xl font-serif mt-2">Narapally, Secunderabad</h2>    </div>
+    <!-- LIVE GOOGLE MAP EMBED -->    <div class="glass-panel rounded-xl overflow-hidden mb-12 relative">
+        <div class="w-full h-[450px]">            <iframe                width="100%"                height="100%"                style="border:0"                loading="lazy"                allowfullscreen                referrerpolicy="no-referrer-when-downgrade"                src="https://www.google.com/maps?q=17.442580,78.575920&hl=en&z=15&output=embed">            </iframe>        </div>
+        <!-- Direction Button -->        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">            <a            href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=17.412449510196886,78.63160475643662&travelmode=driving"            target="_blank"            class="glass-card px-8 py-3 rounded-full text-white hover:text-gold flex items-center gap-2 shadow-2xl transition-all duration-300 hover:scale-105">                <i class="fas fa-route text-red-500"></i>                Get Directions            </a>        </div>
+    </div>
+    <!-- FLOATING CALL BUTTON (ONLY THIS PAGE) -->    <a href="tel:+919642225355"       class="location-call-btn fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 z-50"       id="locationCallBtn">        <i class="fas fa-phone text-2xl"></i>    </a>
+</section>
 
         <!-- 9️⃣ CONTACT PAGE -->
         <section id="page-contact" class="page-section container mx-auto px-6 py-12 flex flex-col justify-center min-h-[80vh]" style="display: none;">
