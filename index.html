@@ -794,51 +794,69 @@
         </section>
         
         <!-- 8️⃣ LOCATION PAGE -->
-        <section id="page-location" class="page-section container mx-auto px-6 py-12 relative" style="display: none;">
+        <section id="page-location" class="page-section py-16 relative">
 
-    <div class="text-center mb-12">
+    <!-- Heading Container -->
+    <div class="container mx-auto px-6 text-center mb-12">
         <span class="text-gold uppercase tracking-widest text-sm">Connectivity</span>
-        <h2 class="text-4xl font-serif mt-2">Narapally, Secunderabad</h2>
+        <h2 class="text-4xl md:text-5xl font-serif mt-2">Narapally, Secunderabad</h2>
     </div>
 
-    <!-- MAP CONTAINER -->
-    <div class="relative rounded-xl overflow-hidden shadow-2xl border border-white/10">
+    <!-- Map Wrapper -->
+    <div class="relative w-full max-w-6xl mx-auto px-4">
 
-        <!-- LIVE GOOGLE MAP -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.988235952596!2d78.62982489394645!3d17.412352200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e402d9107b5%3A0x62761a722955c821!2sPeerzadiguda%2C%20Hyderabad%2C%20Telangana%20500088!5e0!3m2!1sen!2sin!4v1770834230579!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Map Container -->
+        <div class="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
 
-        <!-- DARK GRADIENT OVERLAY (Luxury Look) -->
-        <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none"></div>
+            <!-- Responsive Map -->
+            <div class="w-full h-[400px] md:h-[500px]">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.988235952596!2d78.62982489394645!3d17.412352200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9e402d9107b5%3A0x62761a722955c821!2sPeerzadiguda%2C%20Hyderabad%2C%20Telangana%20500088!5e0!3m2!1sen!2sin!4v1770834230579!5m2!1sen!2sin"
+                    class="w-full h-full"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
 
-        <!-- DIRECTIONS BUTTON -->
-        <div class="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 w-full px-6 sm:px-0 flex justify-center">
+            <!-- Premium Directions Button -->
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 w-full px-6 sm:px-0 flex justify-center">
 
-    <a
-        href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=17.442580,78.575920&travelmode=driving"
-        target="_blank"
-        class="flex items-center justify-center gap-2 
-               bg-gradient-to-r from-yellow-500 to-yellow-600 
-               text-black font-semibold
-               px-6 py-3 
-               sm:px-8 sm:py-3
-               rounded-full
-               text-sm sm:text-base
-               shadow-lg
-               active:scale-95 transition-all duration-300
-               w-full sm:w-auto max-w-xs">
+                <a href="https://www.google.com/maps/dir/?api=1&origin=Current+Location&destination=17.4123522,78.6298248&travelmode=driving"
+                   target="_blank"
+                   class="flex items-center justify-center gap-2
+                          bg-gradient-to-r from-yellow-500 to-yellow-600
+                          text-black font-semibold
+                          px-6 py-3
+                          sm:px-8 sm:py-3
+                          rounded-full
+                          text-sm sm:text-base
+                          shadow-xl
+                          active:scale-95
+                          transition-all duration-300
+                          w-full sm:w-auto max-w-xs min-h-[48px]">
 
-        <i class="fas fa-route text-red-600"></i>
-        Get Directions
+                    <i class="fas fa-route text-red-600"></i>
+                    Get Directions
 
-    </a>
+                </a>
 
-</div>
+            </div>
 
+        </div>
     </div>
+
+    <!-- Floating Call Button -->
+    <a href="tel:+919876543210"
+       class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white 
+              w-14 h-14 md:w-16 md:h-16 
+              rounded-full flex items-center justify-center 
+              shadow-2xl transition-all duration-300 hover:scale-110 z-50">
+        <i class="fas fa-phone text-xl md:text-2xl"></i>
     </a>
 
 </section>
-
         <!-- 9️⃣ CONTACT PAGE -->
         <section id="page-contact" class="page-section container mx-auto px-6 py-12 flex flex-col justify-center min-h-[80vh]" style="display: none;">
             <div class="glass-panel w-full max-w-5xl mx-auto rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
