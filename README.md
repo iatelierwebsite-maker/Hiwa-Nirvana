@@ -1,5 +1,5 @@
-Hiwa Nirvara - Luxury Villa Website (Glassmorphism PWA)
-A high-performance, ultra-luxury real estate website built for Hiwa Nirvara (Narapally, Secunderabad). This project utilizes a custom Glassmorphism UI engine and a Vanilla JavaScript Virtual Router to deliver a premium, app-like experience without the overhead of heavy frontend frameworks.
+Hiwa Nirvana - Luxury Villa Website (Glassmorphism PWA)
+A high-performance, ultra-luxury real estate website built for Hiwa Nirvana (Narapally, Secunderabad). This project utilizes a custom Glassmorphism UI engine and a Vanilla JavaScript Virtual Router to deliver a premium, app-like experience without the overhead of heavy frontend frameworks.
 ✨ Key Features
  * 🎨 Premium Glassmorphism UI: Custom CSS engine using backdrop-filter, semi-transparent gradients, and depth-based layering to create a frosted glass aesthetic.
  * ⚡ Single Page Application (SPA) Architecture:
@@ -22,7 +22,7 @@ A high-performance, ultra-luxury real estate website built for Hiwa Nirvara (Nar
  * Fonts: Playfair Display (Headings) & Poppins (Body).
 📂 File Structure
 Although optimized into a single entry file for preview environments, the logical architecture is designed as follows:
-/hiwa-nirvara/
+/hiwa-nirvana/
 │
 ├── index.html          # Main Application Shell (Contains all Views)
 ├── manifest.json       # PWA Configuration (App Name, Icons, Colors)
@@ -39,8 +39,8 @@ Prerequisites
  * A local development server (recommended for PWA features to work).
 Installation
  * Clone the repository:
-   git clone [https://github.com/yourusername/hiwa-nirvara.git](https://github.com/yourusername/hiwa-nirvara.git)
-cd hiwa-nirvara
+   git clone [https://github.com/yourusername/hiwa-nirvana.git](https://github.com/yourusername/hiwa-nirvana.git)
+cd hiwa-nirvana
 
  * Run the project:
    You can use any static server. Examples:
