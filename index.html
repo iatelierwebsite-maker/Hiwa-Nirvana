@@ -717,8 +717,8 @@
                                     <input type="number" id="docFees" value="50000" class="emi-input" min="0" step="5000">
                                 </div>
                                 <div>
-                                    <label class="block text-gray-300 mb-2">Loan Type</label>
-                                    <select id="loanType" class="emi-input">
+                                    <label class="block text-gray-300 mb-2">Loan type</label>
+                                    <select id="loantype" class="emi-input">
                                         <option value="home">Home Loan</option>
                                         <option value="personal">Personal Loan</option>
                                     </select>
@@ -953,7 +953,7 @@
             const loanTenure = parseFloat(document.getElementById('loanTenure').value) || 15;
             const interestRate = parseFloat(document.getElementById('interestRate').value) || 8.5;
             const docFees = parseFloat(document.getElementById('docFees').value) || 50000;
-            const loanType = document.getElementById('loanType').value;
+            const loantype = document.getElementById('loantype').value;
             
             const downPayment = (propertyPrice * downPaymentPercent) / 100;
             const loanAmount = propertyPrice - downPayment;
@@ -978,7 +978,7 @@
             
             // Update loan type in CTA message
             const whatsappBtn = document.querySelector('a[href*="whatsapp"]');
-            const loanText = loanType === 'home' ? 'home loan' : 'personal loan';
+            const loanText = loantype === 'home' ? 'home loan' : 'personal loan';
             whatsappBtn.href = `https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20${loanText}%20options%20for%20Hiwa%20Nirvana.%20My%20estimated%20EMI%20is%20₹${Math.round(emi)}%20per%20month`;
         }
 
@@ -1112,7 +1112,7 @@
             });
 
             // 3. Initialize EMI Calculator events
-            const emiInputs = ['propertyPrice', 'downPaymentPercent', 'loanTenure', 'interestRate', 'docFees', 'loanType'];
+            const emiInputs = ['propertyPrice', 'downPaymentPercent', 'loanTenure', 'interestRate', 'docFees', 'loantype'];
             emiInputs.forEach(id => {
                 document.getElementById(id).addEventListener('input', calculateEMI);
                 document.getElementById(id).addEventListener('change', calculateEMI);
