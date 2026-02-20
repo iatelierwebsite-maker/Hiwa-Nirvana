@@ -86,7 +86,7 @@
         }
 
         .glass-card {
-            background: linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%);
+            background: linear-gradient(135deg, rgba(48, 78, 118, 0.968) 0%, rgba(255, 255, 255, 0.01) 100%);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -246,7 +246,7 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Brand Logo -->
             <a href="#home" onclick="route(event, 'home')" class="block cursor-pointer">
-                <img src="assets/images/logo.svg" alt="Hiwa Nirvara" class="h-14 w-auto"> <!-- Adjust height as needed -->
+                <img src="assets/images/logo.svg" alt="Hiwa Nirvara" class="h-22 w-auto"> <!-- Adjust height as needed -->
             </a>
 
             <!-- Desktop Menu -->
@@ -285,11 +285,24 @@
         <!-- 1️⃣ HOME PAGE -->
         <section id="page-home" class="page-section h-auto -mt-20 active" style="display: block;">
             <!-- Hero -->
-            <div class="relative h-screen flex items-center justify-center overflow-hidden">
-                <div class="absolute inset-0 z-0">
-                    <img src="assets/images/Ortho_View.webp" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]" onerror="this.style.display='none'" style="display: none;">
-                    <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-[#0f172a]"></div>
-                </div>
+           <div class="relative h-screen flex items-center justify-center overflow-hidden">
+    
+    <div class="absolute inset-0 z-0">
+        
+        <!-- Hero Image -->
+        <img 
+            src="assets/images/Ortho_View.webp" 
+            alt="HIWA NIRVARA Luxury Villas Aerial View"
+            class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]"
+            onerror="this.style.display='none'"
+        >
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-[#0f172a]"></div>
+
+    </div>
+
+</div>
                 <div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-16">
                     <div class="inline-flex items-center gap-2 border border-gold/40 bg-black/30 backdrop-blur-md px-4 py-1 rounded-full mb-6">
                         <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
@@ -1240,14 +1253,30 @@ document.getElementById("enquiryForm").addEventListener("submit", function(e) {
     </main>
 
     <!-- FOOTER -->
-    <footer class="border-t border-white/5 bg-black/40 mt-auto py-12">
-        <div class="container mx-auto px-6">
-             <div class="flex flex-col md:flex-row justify-between items-center mb-8">
-                <div class="text-center md:text-left mb-6 md:mb-0">
-                    <h4 class="text-2xl font-serif text-white mb-2">HIWA NIRVARA</h4>
-                    <p class="text-gray-400 text-xs">Narapally, Secunderabad, Telangana</p>
-                </div>
-                <div class="flex space-x-6 text-xl">
+   <footer class="border-t border-white/5 bg-black/40 mt-auto py-12">
+    <div class="container mx-auto px-6">
+
+        <div class="flex flex-col md:flex-row justify-between items-center mb-8">
+
+            <!-- Logo Section -->
+            <div class="text-center md:text-left mb-6 md:mb-0">
+
+                <!-- Replace text with logo -->
+                <img 
+                    src="assets/images/footer-logo.png" 
+                    alt="HIWA NIRVARA Luxury Villas Logo"
+                    class="mb-3"
+                    style="width:120px; height:80px; object-fit:contain;"
+                >
+
+                <p class="text-gray-400 text-xs">
+                    Narapally, Secunderabad, Telangana
+                </p>
+
+            </div>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-6 text-xl">
 
     <!-- Facebook -->
     <a 
@@ -1288,7 +1317,7 @@ document.getElementById("enquiryForm").addEventListener("submit", function(e) {
 </div>
              </div>
              <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
-                <p>© 2024 Hiwa Nirvara. All rights reserved.</p>
+                <p>© 2026 Hiwa Nirvara. All rights reserved. Powered by <vinisolutions class="com"></vinisolutions></p>
                 <div class="flex space-x-6 mt-4 md:mt-0">
                     <a href="#terms" onclick="route(event, 'terms')" class="hover:text-gold">Terms &amp; Conditions</a>
                     <a href="#" class="hover:text-gold">Privacy Policy</a>
