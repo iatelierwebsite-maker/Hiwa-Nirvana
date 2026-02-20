@@ -246,7 +246,7 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Brand Logo -->
             <a href="#home" onclick="route(event, 'home')" class="block cursor-pointer">
-                <img src="assets/logo.svg" alt="Hiwa Nirvara" class="h-10 w-auto"> <!-- Adjust height as needed -->
+                <img src="assets/images/logo.svg" alt="Hiwa Nirvara" class="h-14 w-auto"> <!-- Adjust height as needed -->
             </a>
 
             <!-- Desktop Menu -->
@@ -287,7 +287,7 @@
             <!-- Hero -->
             <div class="relative h-screen flex items-center justify-center overflow-hidden">
                 <div class="absolute inset-0 z-0">
-                    <img src="assets/images/Ortho_View.png" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]" onerror="this.style.display='none'" style="display: none;">
+                    <img src="assets/images/Ortho_View.webp" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]" onerror="this.style.display='none'" style="display: none;">
                     <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-[#0f172a]"></div>
                 </div>
                 <div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-16">
@@ -448,138 +448,232 @@
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Villa A: The Azure (East Facing) -->
-                <div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-azure')">
-                    <div class="h-64 overflow-hidden relative">
-                        <img src="assets/images/Easy facing_villa_type.1.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                        <span class="absolute top-4 right-4 bg-gold text-black text-xs font-bold px-3 py-1">EAST FACING</span>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-serif text-white mb-2">The Azure</h3>
-                        <p class="text-gray-400 text-sm mb-6">4 BHK Triplex Villa • 3200 Sft</p>
-                        <button class="w-full py-3 border border-gold text-gold hover:bg-gold hover:text-black transition uppercase text-sm tracking-wider">View Details</button>
-                    </div>
-                </div>
-                 <!-- Villa B: The Solis (West Facing) -->
-                <div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-solis')">
-                    <div class="h-64 overflow-hidden relative">
-                         <img src="assets/images/West_facing_type_2.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                        <span class="absolute top-4 right-4 bg-white text-black text-xs font-bold px-3 py-1">WEST FACING</span>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-serif text-white mb-2">The Solis</h3>
-                        <p class="text-gray-400 text-sm mb-6">3 BHK Duplex Villa • 2800 Sft</p>
-                        <button class="w-full py-3 border border-gold text-gold hover:bg-gold hover:text-black transition uppercase text-sm tracking-wider">View Details</button>
-                    </div>
-                </div>
-                 <!-- Villa C: The Zenith (Corner) -->
-                <div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-zenith')">
-                    <div class="h-64 overflow-hidden relative">
-                         <img src="assets/images/North_facing_type_2.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-                        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-3 py-1">CORNER</span>
-                    </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-serif text-white mb-2">The Zenith</h3>
-                        <p class="text-gray-400 text-sm mb-6">5 BHK Luxury Villa • 4500 Sft</p>
-                        <button class="w-full py-3 border border-gold text-gold hover:bg-gold hover:text-black transition uppercase text-sm tracking-wider">View Details</button>
-                    </div>
-                </div>
+               <!-- Villa A: The Azure (East Facing – Vastu Aligned) -->
+<div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-azure')">
+    <div class="h-64 overflow-hidden relative">
+        <img src="assets/images/East facing_villa_type.1.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+        <span class="absolute top-4 right-4 bg-gold text-black text-xs font-bold px-3 py-1">EAST FACING • VASTU COMPLIANT</span>
+    </div>
+    <div class="p-8">
+        <h3 class="text-2xl font-serif text-white mb-2">The Azure</h3>
+        <p class="text-gray-400 text-sm mb-6">
+            4 BHK Triplex Villa • 3200 Sft • Designed as per Hindu Vastu principles with East-facing entrance inviting prosperity, positive energy, and morning sunlight for harmonious living.
+        </p>
+        <button class="w-full py-3 border border-gold text-gold hover:bg-gold hover:text-black transition uppercase text-sm tracking-wider">
+            Explore Vastu Details
+        </button>
+    </div>
+</div>
+
+
+<!-- Villa B: The Solis (West Facing – Balanced Energy) -->
+<div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-solis')">
+    <div class="h-64 overflow-hidden relative">
+        <img src="assets/images/West_facing_type_2.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+        <span class="absolute top-4 right-4 bg-white text-black text-xs font-bold px-3 py-1">WEST FACING • VASTU BALANCED</span>
+    </div>
+    <div class="p-8">
+        <h3 class="text-2xl font-serif text-white mb-2">The Solis</h3>
+        <p class="text-gray-400 text-sm mb-6">
+            3 BHK Duplex Villa • 2800 Sft • Scientifically planned West-facing villa ensuring stability, strength, and balanced energy flow as recommended in traditional Vastu Shastra.
+        </p>
+        <button class="w-full py-3 border border-gold text-gold hover:bg-gold hover:text-black transition uppercase text-sm tracking-wider">
+            Explore Vastu Details
+        </button>
+    </div>
+</div>
+
+
+<!-- Villa C: The Zenith (North Facing Corner – Wealth & Growth) -->
+<div class="glass-card rounded-xl group cursor-pointer" onclick="route(event, 'villa-zenith')">
+    <div class="h-64 overflow-hidden relative">
+        <img src="assets/images/North_facing_type_2.webp" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+        <span class="absolute top-4 right-4 bg-blue-500 text-white text-xs font-bold px-3 py-1">NORTH CORNER • PREMIUM VASTU</span>
+    </div>
+    <div class="p-8">
+        <h3 class="text-2xl font-serif text-white mb-2">The Zenith</h3>
+        <p class="text-gray-400 text-sm mb-6">
+            5 BHK Luxury Villa • 4500 Sft • Exclusive corner villa designed as per North-facing Vastu guidelines symbolizing wealth, financial growth, and long-term prosperity for families.
+        </p>
+        <button class="w-full py-3 border border-gold text-gold hover:bg-gold hover:text-black transition uppercase text-sm tracking-wider">
+            Explore Vastu Details
+        </button>
+    </div>
+</div>                </div>
             </div>
         </section>
 
         <!-- 🆕 DEDICATED VILLA PAGE: AZURE -->
         <section id="page-villa-azure" class="page-section container mx-auto px-0 py-0" style="display: none;">
             <div class="relative h-[60vh] flex items-center justify-center">
-                <img src="assets/images/Easy facing_villa_type.1.webp" class="absolute inset-0 w-full h-full object-cover">
+                <img src="assets/images/East facing_villa_type.1.webp" class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                <div class="relative z-10 text-center">
-                    <h1 class="text-5xl font-serif text-white mb-2">The Azure</h1>
-                    <p class="text-gold tracking-widest uppercase text-sm">4 BHK Triplex | East Facing | 3200 Sft</p>
-                </div>
-            </div>
-            <div class="container mx-auto px-6 py-12">
-                <button onclick="route(event, 'villas')" class="mb-8 text-sm text-gray-400 hover:text-white"><i class="fas fa-arrow-left mr-2"></i> Back to Villas</button>
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <h2 class="text-3xl font-serif text-white mb-6">Designed for Sunlight</h2>
-                        <p class="text-gray-400 leading-relaxed mb-6">The Azure features a unique East-facing orientation that invites the morning sun deep into your living spaces. With a grand double-height entrance and a private home theater, it is the epitome of luxury.</p>
-                        <ul class="space-y-4 text-sm text-gray-300">
-                            <li class="flex items-center gap-3"><i class="fas fa-bed text-gold"></i> 4 Master Bedrooms with Walk-in Closets</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-car text-gold"></i> 2 Covered Car Parks</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-leaf text-gold"></i> Private Terrace Garden</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-film text-gold"></i> Dedicated Home Theater Room</li>
-                        </ul>
-                        <button onclick="route(event, 'contact')" class="btn-primary mt-8">Request Floor Plan &amp; Price</button>
-                    </div>
-                    <div class="glass-panel p-4 rounded-xl">
-                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
-                             <img src="assets/images/Balcony view.webp" class="w-full h-full object-cover opacity-50">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="relative z-10 text-center">
+    <h1 class="text-5xl font-serif text-white mb-2">The Azure</h1>
+    <p class="text-gold tracking-widest uppercase text-sm">
+        4 BHK Triplex | East Facing | 3200 Sft | 100% Vastu Inspired
+    </p>
+</div>
+</div>
 
-        <!-- 🆕 DEDICATED VILLA PAGE: SOLIS -->
-        <section id="page-villa-solis" class="page-section container mx-auto px-0 py-0" style="display: none;">
-            <div class="relative h-[60vh] flex items-center justify-center">
-                <img src="assets/images/West_facing_type_2.webp" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                <div class="relative z-10 text-center">
-                    <h1 class="text-5xl font-serif text-white mb-2">The Solis</h1>
-                    <p class="text-gold tracking-widest uppercase text-sm">3 BHK Duplex | West Facing | 2800 Sft</p>
-                </div>
-            </div>
-            <div class="container mx-auto px-6 py-12">
-                <button onclick="route(event, 'villas')" class="mb-8 text-sm text-gray-400 hover:text-white"><i class="fas fa-arrow-left mr-2"></i> Back to Villas</button>
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <h2 class="text-3xl font-serif text-white mb-6">Contemporary Comfort</h2>
-                        <p class="text-gray-400 leading-relaxed mb-6">Designed for the modern family, The Solis optimizes space without compromising on style. The West-facing layout ensures beautiful sunset views from the master bedroom balcony.</p>
-                        <ul class="space-y-4 text-sm text-gray-300">
-                            <li class="flex items-center gap-3"><i class="fas fa-bed text-gold"></i> 3 Spacious Bedrooms + Study</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-arrows-alt-v text-gold"></i> Double Height Living Area</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-utensils text-gold"></i> Open Kitchen with Island</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-couch text-gold"></i> Family Lounge on First Floor</li>
-                        </ul>
-                        <button onclick="route(event, 'contact')" class="btn-primary mt-8">Request Floor Plan &amp; Price</button>
-                    </div>
-                    <div class="glass-panel p-4 rounded-xl">
-                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
-                             <img src="assets/images/Street Night View.webp" class="w-full h-full object-cover opacity-50">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+<div class="container mx-auto px-6 py-12">
+    <button onclick="route(event, 'villas')" class="mb-8 text-sm text-gray-400 hover:text-white">
+        <i class="fas fa-arrow-left mr-2"></i> Back to Villas
+    </button>
 
-        <!-- 🆕 DEDICATED VILLA PAGE: ZENITH -->
-        <section id="page-villa-zenith" class="page-section container mx-auto px-0 py-0" style="display: none;">
-            <div class="relative h-[60vh] flex items-center justify-center">
-                <img src="assets/images/South facing_villa_type-05.webp" class="absolute inset-0 w-full h-full object-cover">
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
-                <div class="relative z-10 text-center">
-                    <h1 class="text-5xl font-serif text-white mb-2">The Zenith</h1>
-                    <p class="text-gold tracking-widest uppercase text-sm">5 BHK Luxury | Corner Plot | 4500 Sft</p>
-                </div>
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+            <h2 class="text-3xl font-serif text-white mb-6">Luxury Living with Divine East Energy</h2>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+                The Azure at HIWA NIRVARA is thoughtfully crafted as per Hindu Vastu Shastra principles. 
+                The East-facing entrance welcomes the rising sun, symbolizing prosperity, health, 
+                and positive energy. Designed for serene family living, this villa blends 
+                spiritual harmony with contemporary architecture.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+                With carefully positioned master bedroom in the South-West for stability, 
+                kitchen in the South-East (Agni corner), and pooja space in the North-East 
+                (Ishanya), every detail reflects traditional Vastu alignment for peace and abundance.
+            </p>
+
+            <ul class="space-y-4 text-sm text-gray-300">
+                <li class="flex items-center gap-3"><i class="fas fa-bed text-gold"></i> 4 Grand Master Bedrooms with Walk-in Closets</li>
+                <li class="flex items-center gap-3"><i class="fas fa-car text-gold"></i> 2 Covered Car Parks with Security Surveillance</li>
+                <li class="flex items-center gap-3"><i class="fas fa-leaf text-gold"></i> Private Terrace Garden for Serene Evenings</li>
+                <li class="flex items-center gap-3"><i class="fas fa-film text-gold"></i> Dedicated Home Theater & Family Lounge</li>
+                <li class="flex items-center gap-3"><i class="fas fa-shield-alt text-gold"></i> 24/7 Gated Security & Professional Maintenance</li>
+            </ul>
+
+            <button onclick="route(event, 'contact')" class="btn-primary mt-8">
+                Request Floor Plan & Price
+            </button>
+        </div>
+
+        <div class="glass-panel p-4 rounded-xl">
+            <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
+                <img src="assets/images/Balcony view.webp" class="w-full h-full object-cover opacity-50">
             </div>
-            <div class="container mx-auto px-6 py-12">
-                <button onclick="route(event, 'villas')" class="mb-8 text-sm text-gray-400 hover:text-white"><i class="fas fa-arrow-left mr-2"></i> Back to Villas</button>
-                <div class="grid md:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <h2 class="text-3xl font-serif text-white mb-6">The Pinnacle of Luxury</h2>
-                        <p class="text-gray-400 leading-relaxed mb-6">Our most exclusive offering, The Zenith sits on prime corner plots. It features a private lap pool, a provision for an internal elevator, and expansive landscaped decks on every level.</p>
-                        <ul class="space-y-4 text-sm text-gray-300">
-                            <li class="flex items-center gap-3"><i class="fas fa-bed text-gold"></i> 5 Grand Suites</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-swimmer text-gold"></i> Private Plunge Pool</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-elevator text-gold"></i> Internal Lift Provision</li>
-                            <li class="flex items-center gap-3"><i class="fas fa-glass-martini-alt text-gold"></i> Terrace Bar &amp; Lounge</li>
-                        </ul>
-                        <button onclick="route(event, 'contact')" class="btn-primary mt-8">Request Floor Plan &amp; Price</button>
-                    </div>
-                    <div class="glass-panel p-4 rounded-xl">
-                        <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
-                             <img src="assets/images/Ortho_View.webp" class="w-full h-full object-cover opacity-50">
-                        </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- SOLIS -->
+<section id="page-villa-solis" class="page-section container mx-auto px-0 py-0" style="display: none;">
+<div class="relative h-[60vh] flex items-center justify-center">
+    <img src="assets/images/West_facing_type_2.webp" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+    <div class="relative z-10 text-center">
+        <h1 class="text-5xl font-serif text-white mb-2">The Solis</h1>
+        <p class="text-gold tracking-widest uppercase text-sm">
+            3 BHK Duplex | West Facing | 2800 Sft | Vastu Balanced Design
+        </p>
+    </div>
+</div>
+
+<div class="container mx-auto px-6 py-12">
+    <button onclick="route(event, 'villas')" class="mb-8 text-sm text-gray-400 hover:text-white">
+        <i class="fas fa-arrow-left mr-2"></i> Back to Villas
+    </button>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+            <h2 class="text-3xl font-serif text-white mb-6">Contemporary Comfort with Stability</h2>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+                The Solis offers a harmonious West-facing design that represents stability, strength, 
+                and long-term growth according to Vastu principles. Ideal for modern families seeking 
+                peaceful living within a secure gated community.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+                Spacious interiors, cross ventilation, landscaped surroundings, and serene community 
+                spaces ensure a calm lifestyle experience, complemented by 24/7 security monitoring 
+                and dedicated maintenance services.
+            </p>
+
+            <ul class="space-y-4 text-sm text-gray-300">
+                <li class="flex items-center gap-3"><i class="fas fa-bed text-gold"></i> 3 Spacious Bedrooms + Study Area</li>
+                <li class="flex items-center gap-3"><i class="fas fa-arrows-alt-v text-gold"></i> Double Height Living Space</li>
+                <li class="flex items-center gap-3"><i class="fas fa-utensils text-gold"></i> Open Kitchen in South-East Vastu Zone</li>
+                <li class="flex items-center gap-3"><i class="fas fa-couch text-gold"></i> Private Family Lounge</li>
+                <li class="flex items-center gap-3"><i class="fas fa-shield-alt text-gold"></i> Gated Community with CCTV & Maintenance Team</li>
+            </ul>
+
+            <button onclick="route(event, 'contact')" class="btn-primary mt-8">
+                Request Floor Plan & Price
+            </button>
+        </div>
+
+        <div class="glass-panel p-4 rounded-xl">
+            <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
+                <img src="assets/images/Street Night View.webp" class="w-full h-full object-cover opacity-50">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<!-- ZENITH -->
+<section id="page-villa-zenith" class="page-section container mx-auto px-0 py-0" style="display: none;">
+<div class="relative h-[60vh] flex items-center justify-center">
+    <img src="assets/images/South facing_villa_type-05.webp" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
+    <div class="relative z-10 text-center">
+        <h1 class="text-5xl font-serif text-white mb-2">The Zenith</h1>
+        <p class="text-gold tracking-widest uppercase text-sm">
+            5 BHK Luxury | Corner Plot | 4500 Sft | Elite Vastu Alignment
+        </p>
+    </div>
+</div>
+
+<div class="container mx-auto px-6 py-12">
+    <button onclick="route(event, 'villas')" class="mb-8 text-sm text-gray-400 hover:text-white">
+        <i class="fas fa-arrow-left mr-2"></i> Back to Villas
+    </button>
+
+    <div class="grid md:grid-cols-2 gap-12 items-start">
+        <div>
+            <h2 class="text-3xl font-serif text-white mb-6">The Pinnacle of Luxury & Serenity</h2>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+                The Zenith is the most prestigious offering at HIWA NIRVARA. 
+                Situated on premium corner plots, this villa maximizes natural light, 
+                ventilation, and Vastu alignment for wealth, harmony, and success.
+            </p>
+
+            <p class="text-gray-400 leading-relaxed mb-6">
+                Featuring elite architectural detailing, landscaped decks, private leisure 
+                zones, and advanced security systems, this villa delivers a serene yet 
+                ultra-luxurious living experience supported by professional facility 
+                management and maintenance services.
+            </p>
+
+            <ul class="space-y-4 text-sm text-gray-300">
+                <li class="flex items-center gap-3"><i class="fas fa-bed text-gold"></i> 5 Grand Suites with Premium Finishes</li>
+                <li class="flex items-center gap-3"><i class="fas fa-swimmer text-gold"></i> Private Plunge Pool Provision</li>
+                <li class="flex items-center gap-3"><i class="fas fa-elevator text-gold"></i> Internal Lift Provision</li>
+                <li class="flex items-center gap-3"><i class="fas fa-glass-martini-alt text-gold"></i> Terrace Lounge & Entertainment Deck</li>
+                <li class="flex items-center gap-3"><i class="fas fa-shield-alt text-gold"></i> Advanced Security & Community Maintenance</li>
+            </ul>
+
+            <button onclick="route(event, 'contact')" class="btn-primary mt-8">
+                Request Floor Plan & Price
+            </button>
+        </div>
+
+        <div class="glass-panel p-4 rounded-xl">
+            <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
+                <img src="assets/images/Ortho_View.webp" class="w-full h-full object-cover opacity-50">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
                     </div>
                 </div>
             </div>
@@ -589,84 +683,207 @@
         <section id="page-amenities" class="page-section container mx-auto px-6 py-12" style="display: none;">
             <div class="flex flex-col md:flex-row justify-between items-end mb-12">
                 <div>
-                    <span class="text-gold uppercase tracking-widest text-sm">Lifestyle</span>
-                    <h2 class="text-4xl font-serif mt-2">World-Class Amenities</h2>
-                </div>
-                <p class="text-gray-400 max-w-md text-right">Click below to view plans.</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- Pool -->
-                <div onclick="route(event, 'amenity-pool')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
-                    <img src="assets/images/Swimming pool.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
-                    <i class="fas fa-swimmer text-4xl text-gold mb-4 relative z-10"></i>
-                    <h4 class="text-lg font-medium relative z-10">Infinity Pool</h4>
-                    <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">View Plan</span>
-                </div>
-                <!-- Gym -->
-                <div onclick="route(event, 'amenity-gym')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
-                    <img src="assets/images/Gym.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
-                    <i class="fas fa-dumbbell text-4xl text-gold mb-4 relative z-10"></i>
-                    <h4 class="text-lg font-medium relative z-10">Sky Gym</h4>
-                     <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">View Plan</span>
-                </div>
-                <!-- Club -->
-                <div onclick="route(event, 'amenity-club')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
-                    <img src="assets/images/Clubhouse.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
-                    <i class="fas fa-glass-cheers text-4xl text-gold mb-4 relative z-10"></i>
-                    <h4 class="text-lg font-medium relative z-10">Clubhouse</h4>
-                     <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">View Plan</span>
-                </div>
-                <!-- Gardens -->
-                <div class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square relative overflow-hidden">
-                    <img src="assets/images/Landscape_1.webp" class="absolute inset-0 w-full h-full object-cover opacity-20">
-                    <i class="fas fa-tree text-2xl text-gray-500 mb-4 relative z-10"></i>
-                    <h4 class="text-lg font-medium text-gray-400 relative z-10">Zen Gardens</h4>
-                </div>
-            </div>
-        </section>
+    <span class="text-gold uppercase tracking-widest text-sm">Lifestyle</span>
+    <h2 class="text-4xl font-serif mt-2">Elevated Living Experiences</h2>
+</div>
+<p class="text-gray-400 max-w-md text-right">
+    Discover thoughtfully curated amenities crafted for luxury, wellness, and refined community living at Hiwa Nirvana.
+</p>
+</div>
 
-        <section id="page-amenity-pool" class="page-section container mx-auto px-0 py-0" style="display: none;">
-             <div class="relative h-[50vh]">
-                 <img src="assets/images/Swimming pool.webp" class="w-full h-full object-cover">
-                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h1 class="text-5xl font-serif text-white">Infinity Pool</h1></div>
-             </div>
-             <div class="p-8"><button onclick="route(event, 'amenities')" class="text-gold mb-4"><i class="fas fa-arrow-left"></i> Back</button><p class="text-gray-300">Level 3 | 25 Meter Lap Pool | Jacuzzi</p><div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">Pool Plan Placeholder</div></div>
-        </section>
-        
-        <section id="page-amenity-gym" class="page-section container mx-auto px-0 py-0" style="display: none;">
-             <div class="relative h-[50vh]">
-                 <img src="assets/images/Gym.webp" class="w-full h-full object-cover">
-                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h1 class="text-5xl font-serif text-white">Sky Gym</h1></div>
-             </div>
-             <div class="p-8"><button onclick="route(event, 'amenities')" class="text-gold mb-4"><i class="fas fa-arrow-left"></i> Back</button><p class="text-gray-300">Level 4 | Technogym Equipment | Yoga Deck</p><div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">Gym Plan Placeholder</div></div>
-        </section>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
-        <section id="page-amenity-club" class="page-section container mx-auto px-0 py-0" style="display: none;">
-             <div class="relative h-[50vh]">
-                 <img src="assets/images/Clubhouse Night View.webp" class="w-full h-full object-cover">
-                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h1 class="text-5xl font-serif text-white">Clubhouse</h1></div>
-             </div>
-             <div class="p-8">
-                 <button onclick="route(event, 'amenities')" class="text-gold mb-4"><i class="fas fa-arrow-left"></i> Back</button>
-                 <p class="text-gray-300 mb-6">15,000 Sft | Banquet Hall | Library | Indoor Games</p>
-                 <div class="grid grid-cols-2 gap-4">
-                     <div><img src="assets/images/Indoor games.webp" class="rounded-lg h-32 object-cover w-full"></div>
-                     <div><img src="assets/images/Party hall.webp" class="rounded-lg h-32 object-cover w-full"></div>
-                 </div>
-             </div>
-        </section>
+    <!-- Pool -->
+    <div onclick="route(event, 'amenity-pool')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
+        <img src="assets/images/Swimming pool.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
+        <i class="fas fa-swimmer text-4xl text-gold mb-4 relative z-10"></i>
+        <h4 class="text-lg font-medium relative z-10">Resort-Style Infinity Pool</h4>
+        <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">
+            Explore Details
+        </span>
+    </div>
+
+    <!-- Gym -->
+    <div onclick="route(event, 'amenity-gym')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
+        <img src="assets/images/Gym.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
+        <i class="fas fa-dumbbell text-4xl text-gold mb-4 relative z-10"></i>
+        <h4 class="text-lg font-medium relative z-10">Elite Fitness Studio</h4>
+        <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">
+            Explore Details
+        </span>
+    </div>
+
+    <!-- Club -->
+    <div onclick="route(event, 'amenity-club')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
+        <img src="assets/images/Clubhouse.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
+        <i class="fas fa-glass-cheers text-4xl text-gold mb-4 relative z-10"></i>
+        <h4 class="text-lg font-medium relative z-10">Grand Clubhouse</h4>
+        <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">
+            Explore Details
+        </span>
+    </div>
+
+    <!-- Gardens -->
+    <div class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square relative overflow-hidden">
+        <img src="assets/images/Landscape_1.webp" class="absolute inset-0 w-full h-full object-cover opacity-20">
+        <i class="fas fa-tree text-2xl text-gray-500 mb-4 relative z-10"></i>
+        <h4 class="text-lg font-medium text-gray-400 relative z-10">Serene Zen Gardens</h4>
+    </div>
+
+</div>
+</section>
+
+
+<!-- POOL PAGE -->
+<section id="page-amenity-pool" class="page-section container mx-auto px-0 py-0" style="display: none;">
+    
+    <div class="relative h-[50vh]">
+        <img src="assets/images/Swimming pool.webp" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <h1 class="text-5xl font-serif text-white">Resort-Style Infinity Pool</h1>
+        </div>
+    </div>
+
+    <div class="p-8">
+        <button onclick="route(event, 'amenities')" class="text-gold mb-4">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
+        <p class="text-gray-300 leading-relaxed">
+            Immerse yourself in a resort-inspired infinity pool designed for leisure and wellness. 
+            Featuring a 25-meter lap pool, integrated Jacuzzi seating, and ambient evening lighting, 
+            this luxurious water retreat offers residents a tranquil escape within the community.
+        </p>
+
+        <div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">
+            Pool Layout Plan
+        </div>
+    </div>
+</section>
+
+
+
+<!-- GYM PAGE -->
+<section id="page-amenity-gym" class="page-section container mx-auto px-0 py-0" style="display: none;">
+    
+    <div class="relative h-[50vh]">
+        <img src="assets/images/Gym.webp" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <h1 class="text-5xl font-serif text-white">Elite Fitness Studio</h1>
+        </div>
+    </div>
+
+    <div class="p-8">
+        <button onclick="route(event, 'amenities')" class="text-gold mb-4">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
+        <p class="text-gray-300 leading-relaxed">
+            A fully equipped, state-of-the-art fitness studio featuring premium strength and cardio equipment, 
+            dedicated yoga and meditation zones, and a serene workout environment. 
+            Designed to promote holistic well-being for residents of all age groups.
+        </p>
+
+        <div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">
+            Gym Layout Plan
+        </div>
+    </div>
+</section>
+
+
+
+<!-- CLUBHOUSE PAGE -->
+<section id="page-amenity-club" class="page-section container mx-auto px-0 py-0" style="display: none;">
+    
+    <div class="relative h-[50vh]">
+        <img src="assets/images/Clubhouse Night View.webp" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <h1 class="text-5xl font-serif text-white">Grand Clubhouse</h1>
+        </div>
+    </div>
+
+    <div class="p-8">
+        <button onclick="route(event, 'amenities')" class="text-gold mb-4">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
+        <p class="text-gray-300 mb-6 leading-relaxed">
+            Spread across an expansive space, the Hiwa Nirvana Grand Clubhouse is the social heart of the community. 
+            It features a premium banquet hall for celebrations, a refined library lounge, indoor games arena, 
+            and dedicated gathering spaces for residents to connect and unwind in elegance.
+        </p>
+
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <img src="assets/images/Indoor games.webp" class="rounded-lg h-32 object-cover w-full">
+            </div>
+            <div>
+                <img src="assets/images/Party hall.webp" class="rounded-lg h-32 object-cover w-full">
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- 5️⃣ GALLERY PAGE -->
         <section id="page-gallery" class="page-section container mx-auto px-6 py-12" style="display: none;">
             <h2 class="text-4xl font-serif text-center mb-12">Visual Tour</h2>
             <div class="columns-1 md:columns-3 gap-6 space-y-6">
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/Street Night View.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/Ortho_View.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/South_facing_type_4.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/South_facing_type_5.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/Entrance.webp" class="w-full rounded-lg"></div>
-                <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)"><img src="assets/images/South facing_villa_type-05.webp" class="w-full rounded-lg"></div>
-            </div>
+
+    <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)">
+        <img 
+            src="assets/images/Street Night View.webp" 
+            class="w-full rounded-lg"
+            alt="Hiwa Nirvana Villa Project – Premium Gated Community Street Night View in Narapally"
+            title="Elegant Night View of Hiwa Nirvana Luxury Villa Community"
+        >
+    </div>
+
+    <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)">
+        <img 
+            src="assets/images/Ortho_View.webp" 
+            class="w-full rounded-lg"
+            alt="Hiwa Nirvana Villas – Aerial Orthographic View of Luxury Gated Community"
+            title="Master Layout View of Hiwa Nirvana Premium Villas"
+        >
+    </div>
+
+    <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)">
+        <img 
+            src="assets/images/South_facing_type_4.webp" 
+            class="w-full rounded-lg"
+            alt="South Facing Luxury Villa Type 4 at Hiwa Nirvana Narapally"
+            title="South Facing Villa – Contemporary Architecture at Hiwa Nirvana"
+        >
+    </div>
+
+    <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)">
+        <img 
+            src="assets/images/South_facing_type_5.webp" 
+            class="w-full rounded-lg"
+            alt="Premium South Facing Villa Type 5 – Hiwa Nirvana Gated Community"
+            title="Spacious South Facing Villa Design at Hiwa Nirvana"
+        >
+    </div>
+
+    <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)">
+        <img 
+            src="assets/images/Entrance.webp" 
+            class="w-full rounded-lg"
+            alt="Grand Entrance Arch of Hiwa Nirvana Luxury Villas Narapally"
+            title="Signature Entrance Gate – Hiwa Nirvana Villa Project"
+        >
+    </div>
+
+    <div class="glass-card p-1 rounded-lg break-inside-avoid cursor-pointer" onclick="openLightbox(this)">
+        <img 
+            src="assets/images/South facing_villa_type-05.webp" 
+            class="w-full rounded-lg"
+            alt="Modern South Facing Signature Villa Type 05 – Hiwa Nirvana"
+            title="Luxury Signature Villa Elevation – Hiwa Nirvana Narapally"
+        >
+    </div>
+
+</div>
         </section>
 
         <!-- 🆕 EMI CALCULATOR PAGE -->
@@ -777,10 +994,10 @@
 
                         <!-- CTA Buttons -->
                         <div class="mt-8 space-y-4">
-                            <a href="https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20loan%20options%20for%20Hiwa%20Nirvara" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg font-medium transition">
+                            <a href="https://wa.me/91 888 59 888?text=Hi,%20I'm%20interested%20in%20loan%20options%20for%20Hiwa%20Nirvara" target="_blank" class="block w-full bg-green-600 hover:bg-green-700 text-white text-center py-3 rounded-lg font-medium transition">
                                 <i class="fab fa-whatsapp mr-2"></i> Chat on WhatsApp
                             </a>
-                            <a href="tel:+919876543210" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium transition">
+                            <a href="tel:+91 888 59 888" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-3 rounded-lg font-medium transition">
                                 <i class="fas fa-phone mr-2"></i> Call Now
                             </a>
                         </div>
@@ -850,7 +1067,7 @@
     </div>
 
     <!-- Floating Call Button -->
-    <a href="tel:+919876543210"
+    <a href="tel:+91 888 59 888"
        class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white 
               w-14 h-14 md:w-16 md:h-16 
               rounded-full flex items-center justify-center 
@@ -864,13 +1081,49 @@
             <div class="glass-panel p-8 rounded-2xl max-w-4xl mx-auto">
                 <h1 class="text-3xl font-serif text-gold mb-6">Terms &amp; Conditions</h1>
                 <div class="text-gray-300 text-sm space-y-4">
-                    <p><strong>1. Introduction:</strong> Welcome to Hiwa Nirvara. By accessing this website, you agree to these terms.</p>
-                    <p><strong>2. Accuracy of Information:</strong> The visuals, dimensions, and specifications are indicative and subject to change by the developer.</p>
-                    <p><strong>3. Intellectual Property:</strong> All content, images, and logos are the property of Hiwa Nirvara.</p>
-                    <p><strong>4. Limitation of Liability:</strong> Hiwa Nirvara is not liable for any damages arising from the use of this website.</p>
-                    <p><strong>5. RERA:</strong> This project is registered under TSRERA. Registration No: P0220000XXXX.</p>
-                    <button onclick="route(event, 'home')" class="mt-6 text-gold underline">Back to Home</button>
-                </div>
+
+    <p>
+        <strong>1. Introduction:</strong> 
+        Welcome to HIWA NIRVARA, an exclusive luxury villa community located in Narapally, Hyderabad. 
+        By accessing and using this website, you agree to comply with the terms and conditions outlined herein.
+    </p>
+
+    <p>
+        <strong>2. Project Information & Accuracy:</strong> 
+        All illustrations, architectural elevations, floor plans, amenities, dimensions, 
+        specifications, and artistic impressions displayed on this website are indicative in nature. 
+        The developer of HIWA NIRVARA reserves the right to make modifications in design, layout, specifications, 
+        and features as deemed necessary without prior notice.
+    </p>
+
+    <p>
+        <strong>3. Intellectual Property Rights:</strong> 
+        All content including text, images, design elements, branding, logos, brochures, 
+        and marketing materials related to HIWA NIRVARA are the exclusive property of the developer. 
+        Unauthorized reproduction, distribution, or usage is strictly prohibited.
+    </p>
+
+    <p>
+        <strong>4. Limitation of Liability:</strong> 
+        While every effort has been made to ensure accuracy of information, 
+        HIWA NIRVARA and its developers shall not be held liable for any direct, 
+        indirect, incidental, or consequential damages arising from reliance on 
+        the information provided on this website.
+    </p>
+
+    <p>
+        <strong>5. Regulatory Compliance (RERA):</strong> 
+        The HIWA NIRVARA Villa Project is registered under TSRERA. 
+        Registration Number: P0220000XXXX. 
+        Prospective buyers are advised to verify all statutory approvals 
+        and documentation before making any purchase decisions.
+    </p>
+
+    <button onclick="route(event, 'home')" class="mt-6 text-gold underline">
+        Back to Home
+    </button>
+
+</div>
             </div>
         </section>
 
@@ -879,24 +1132,108 @@
             <div class="glass-panel w-full max-w-5xl mx-auto rounded-3xl overflow-hidden flex flex-col md:flex-row shadow-2xl">
                 <!-- Contact Info -->
                 <div class="md:w-2/5 bg-slate-900/90 p-10 flex flex-col justify-between border-r border-white/5">
-                    <div>
-                        <h2 class="text-3xl font-serif text-white mb-8">Get In Touch</h2>
-                        <div class="space-y-8">
-                            <div class="flex gap-4"><div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold"><i class="fas fa-map-marker-alt"></i></div><div><h5 class="text-white font-medium">Site Address</h5><p class="text-gray-400 text-sm">Survey No. 45/A, Warangal Highway, Narapally</p></div></div>
-                            <div class="flex gap-4"><div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold"><i class="fas fa-envelope"></i></div><div><h5 class="text-white font-medium">Email</h5><p class="text-gray-400 text-sm">sales@hiwanirvara.com</p></div></div>
-                        </div>
-                    </div>
+    <div>
+        <h2 class="text-3xl font-serif text-white mb-8">Get In Touch</h2>
+        <div class="space-y-8">
+
+            <!-- Address -->
+            <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold">
+                    <i class="fas fa-map-marker-alt"></i>
                 </div>
-                <!-- Form -->
-                <div class="md:w-3/5 p-10 bg-white/5 relative">
-                    <h3 class="text-xl text-gold font-serif mb-2">Register Interest</h3>
-                    <form id="enquiryForm" class="space-y-5">
-                        <input type="text" name="user_name" placeholder="Your Name" required="" class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
-                        <input type="tel" name="user_phone" placeholder="Phone Number" required="" class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
-                        <input type="email" name="user_email" placeholder="Email Address" required="" class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
-                        <button type="submit" class="w-full btn-primary mt-4">Submit Enquiry</button>
-                    </form>
+                <div>
+                    <h5 class="text-white font-medium">Site Address</h5>
+                    <a 
+                        href="https://www.google.com/maps/search/?api=1&query=Survey+No.+45/A,+Warangal+Highway,+Narapally"
+                        target="_blank"
+                        class="text-gray-400 text-sm hover:text-gold transition"
+                    >
+                        Survey No. 45/A, Warangal Highway, Narapally
+                    </a>
                 </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                    <h5 class="text-white font-medium">Phone</h5>
+                    <a 
+                        href="tel:+919876543210"
+                        class="text-gray-400 text-sm hover:text-gold transition"
+                    >
+                        +91 888 59 888
+                    </a>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex gap-4">
+                <div class="w-10 h-10 rounded-full bg-gold/20 flex items-center justify-center text-gold">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                    <h5 class="text-white font-medium">Email</h5>
+                    <a 
+                        href="mailto:sales@hiwanirvara.com"
+                        class="text-gray-400 text-sm hover:text-gold transition"
+                    >
+                        sales@hiwanirvara.com
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Form -->
+<div class="md:w-3/5 p-10 bg-white/5 relative">
+    <h3 class="text-xl text-gold font-serif mb-2">Register Interest</h3>
+
+    <form id="enquiryForm" class="space-y-5">
+
+        <input type="text" name="user_name" placeholder="Your Name" required
+            class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+
+        <input type="tel" name="user_phone" placeholder="Phone Number" required
+            class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+
+        <input type="email" name="user_email" placeholder="Email Address" required
+            class="block w-full px-0 py-3 text-sm text-white bg-transparent border-0 border-b-2 border-gray-600 focus:outline-none focus:border-gold">
+
+        <button type="submit" class="w-full btn-primary mt-4">
+            Submit Enquiry
+        </button>
+
+    </form>
+</div>
+
+
+<!-- WhatsApp Integration Script -->
+<script>
+document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const name = this.user_name.value;
+    const phone = this.user_phone.value;
+    const email = this.user_email.value;
+
+    const message = `Hello HIWA NIRVARA Team,%0A%0A` +
+                    `I am interested in the HIWA NIRVARA Luxury Villas.%0A%0A` +
+                    `Name: ${name}%0A` +
+                    `Phone: ${phone}%0A` +
+                    `Email: ${email}%0A%0A` +
+                    `Please share complete details and pricing.`;
+
+    const whatsappURL = `https://wa.me/919876543210?text=${message}`;
+
+    window.open(whatsappURL, "_blank");
+});
+</script>
             </div>
         </section>
 
@@ -911,11 +1248,44 @@
                     <p class="text-gray-400 text-xs">Narapally, Secunderabad, Telangana</p>
                 </div>
                 <div class="flex space-x-6 text-xl">
-                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-facebook-f">https://www.facebook.com/hiwainfradevelopers</i></a>
-                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-instagram">https://www.instagram.com/hiwainfradevelopers/</i></a>
-                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="text-gray-400 hover:text-gold transition"><i class="fab fa-youtube"></i></a>
-                </div>
+
+    <!-- Facebook -->
+    <a 
+        href="https://www.facebook.com/hiwainfradevelopers" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="text-gray-400 hover:text-gold transition"
+    >
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a 
+        href="https://www.instagram.com/hiwainfradevelopers/" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="text-gray-400 hover:text-gold transition"
+    >
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <!-- LinkedIn -->
+    <a 
+        href="#" 
+        class="text-gray-400 hover:text-gold transition"
+    >
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <!-- YouTube -->
+    <a 
+        href="#" 
+        class="text-gray-400 hover:text-gold transition"
+    >
+        <i class="fab fa-youtube"></i>
+    </a>
+
+</div>
              </div>
              <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-400">
                 <p>© 2024 Hiwa Nirvara. All rights reserved.</p>
@@ -929,7 +1299,7 @@
     </footer>
 
     <!-- WhatsApp & Chatbot -->
-    <a href="https://wa.me/919876543210" target="_blank" class="float-icon whatsapp-icon">
+    <a href="https://wa.me/91 888 59 888" target="_blank" class="float-icon whatsapp-icon">
         <i class="fab fa-whatsapp"></i>
     </a>
     
@@ -1029,7 +1399,7 @@
             // Update loan type in CTA message
             const whatsappBtn = document.querySelector('a[href*="whatsapp"]');
             const loanText = loanType === 'home' ? 'home loan' : 'personal loan';
-            whatsappBtn.href = `https://wa.me/919876543210?text=Hi,%20I'm%20interested%20in%20${loanText}%20options%20for%20Hiwa%20Nirvara.%20My%20estimated%20EMI%20is%20₹${Math.round(emi)}%20per%20month`;
+            whatsappBtn.href = `https://wa.me/91 888 59 888?text=Hi,%20I'm%20interested%20in%20${loanText}%20options%20for%20Hiwa%20Nirvara.%20My%20estimated%20EMI%20is%20₹${Math.round(emi)}%20per%20month`;
         }
 
         // Format numbers with commas
