@@ -273,71 +273,102 @@
             </button>
         </div>
 
-       <!-- ================= PREMIUM MOBILE MENU ================= -->
+      <!-- ================= PREMIUM GLASS MOBILE MENU ================= -->
 
 <!-- Overlay -->
 <div id="mobile-overlay"
-     class="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-300">
+     class="fixed inset-0 bg-black/50 backdrop-blur-sm z-40 hidden opacity-0 transition-opacity duration-500 ease-[cubic-bezier(0.77,0,0.175,1)]">
 </div>
 
-<!-- Slide Menu -->
+<!-- Glass Panel Menu -->
 <div id="mobile-menu"
-     class="fixed top-0 right-0 h-full w-80 max-w-full bg-slate-900 z-50 transform translate-x-full transition-transform duration-500 ease-in-out shadow-2xl">
+     class="fixed top-0 right-0 h-full w-72 max-w-full 
+            bg-white/5 backdrop-blur-xl border-l border-white/10
+            shadow-[0_0_40px_rgba(0,0,0,0.6)]
+            z-50 transform translate-x-full 
+            transition-transform duration-700 ease-[cubic-bezier(0.77,0,0.175,1)]">
 
     <!-- Close Button -->
     <button onclick="toggleMobileMenu()"
-            class="absolute top-6 right-6 text-gray-400 text-3xl hover:text-gold transition">
+            class="absolute top-6 right-6 text-gray-400 text-3xl hover:text-gold transition duration-300">
         &times;
     </button>
 
     <!-- Menu Content -->
-    <div class="h-full flex flex-col justify-center px-6 space-y-8">
+    <div class="h-full flex flex-col justify-center px-8 space-y-6">
 
-        <a href="#home"
-           onclick="route(event, 'home'); toggleMobileMenu()"
-           class="menu-item text-2xl font-serif text-white hover:text-gold transition">
+        <a href="#home" onclick="route(event, 'home'); toggleMobileMenu()"
+           class="menu-item relative text-base font-serif text-white transition duration-300">
             Home
         </a>
 
-        <a href="#villas"
-           onclick="route(event, 'villas'); toggleMobileMenu()"
-           class="menu-item text-2xl font-serif text-white hover:text-gold transition">
+        <a href="#villas" onclick="route(event, 'villas'); toggleMobileMenu()"
+           class="menu-item relative text-base font-serif text-white transition duration-300">
             Villas
         </a>
 
-        <a href="#amenities"
-           onclick="route(event, 'amenities'); toggleMobileMenu()"
-           class="menu-item text-2xl font-serif text-white hover:text-gold transition">
+        <a href="#amenities" onclick="route(event, 'amenities'); toggleMobileMenu()"
+           class="menu-item relative text-base font-serif text-white transition duration-300">
             Amenities
         </a>
 
-        <a href="#gallery"
-           onclick="route(event, 'gallery'); toggleMobileMenu()"
-           class="menu-item text-2xl font-serif text-white hover:text-gold transition">
+        <a href="#gallery" onclick="route(event, 'gallery'); toggleMobileMenu()"
+           class="menu-item relative text-base font-serif text-white transition duration-300">
             Gallery
         </a>
 
-        <a href="#location"
-           onclick="route(event, 'location'); toggleMobileMenu()"
-           class="menu-item text-2xl font-serif text-white hover:text-gold transition">
+        <a href="#location" onclick="route(event, 'location'); toggleMobileMenu()"
+           class="menu-item relative text-base font-serif text-white transition duration-300">
             Location
         </a>
 
-        <a href="#emi"
-           onclick="route(event, 'emi'); toggleMobileMenu()"
-           class="menu-item text-2xl font-serif text-white hover:text-gold transition">
+        <a href="#emi" onclick="route(event, 'emi'); toggleMobileMenu()"
+           class="menu-item relative text-base font-serif text-white transition duration-300">
             EMI Calculator
         </a>
 
         <!-- CTA -->
         <a href="#contact"
            onclick="route(event, 'contact'); toggleMobileMenu()"
-           class="menu-item mt-6 text-lg font-medium text-gold border border-gold px-8 py-3 rounded-full text-center hover:bg-gold hover:text-black transition">
+           class="menu-item relative mt-6 text-sm font-medium text-gold border border-gold px-6 py-2 rounded-full text-center transition duration-300 hover:bg-gold hover:text-black">
             Enquiry Now
         </a>
 
     </div>
 </div>
+
+
+<!-- ================= STYLES ================= -->
+<style>
+/* Animated Gold Underline */
+.menu-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #d4af37, #f5d76e);
+    transition: width 0.3s ease;
+}
+
+.menu-item:hover::after {
+    width: 100%;
+}
+
+/* Luxury Glow Effect */
+.menu-item:hover {
+    color: #d4af37;
+    text-shadow: 0 0 12px rgba(212,175,55,0.6);
+}
+
+/* Glass Shine Edge */
+#mobile-menu {
+    box-shadow: 
+        -5px 0 25px rgba(0,0,0,0.6),
+        inset 1px 0 0 rgba(255,255,255,0.08);
+}
+</style>
 
 
 <!-- ================= SCRIPT ================= -->
@@ -347,47 +378,53 @@ const overlay = document.getElementById("mobile-overlay");
 const menuItems = document.querySelectorAll(".menu-item");
 
 function toggleMobileMenu() {
-
     const isOpen = !menu.classList.contains("translate-x-full");
-
-    if (isOpen) {
-        // Close
-        menu.classList.add("translate-x-full");
-        overlay.classList.add("hidden");
-        overlay.classList.remove("opacity-100");
-        document.body.classList.remove("overflow-hidden");
-
-        menuItems.forEach(item => {
-            item.style.opacity = "0";
-            item.style.transform = "translateX(20px)";
-        });
-
-    } else {
-        // Open
-        menu.classList.remove("translate-x-full");
-        overlay.classList.remove("hidden");
-
-        setTimeout(() => {
-            overlay.classList.add("opacity-100");
-        }, 10);
-
-        document.body.classList.add("overflow-hidden");
-
-        // Stagger animation
-        menuItems.forEach((item, index) => {
-            item.style.opacity = "0";
-            item.style.transform = "translateX(20px)";
-            item.style.transition = "all 0.4s ease";
-            setTimeout(() => {
-                item.style.opacity = "1";
-                item.style.transform = "translateX(0)";
-            }, 100 + index * 100);
-        });
-    }
+    isOpen ? closeMenu() : openMenu();
 }
 
-// Auto close when clicking overlay
-overlay.addEventListener("click", toggleMobileMenu);
+function openMenu() {
+    menu.classList.remove("translate-x-full");
+    overlay.classList.remove("hidden");
+
+    setTimeout(() => overlay.classList.add("opacity-100"), 20);
+    document.body.classList.add("overflow-hidden");
+
+    // Luxury stagger animation
+    menuItems.forEach((item, index) => {
+        item.style.opacity = "0";
+        item.style.transform = "translateX(25px)";
+        item.style.transition = "all 0.6s cubic-bezier(0.77,0,0.175,1)";
+        setTimeout(() => {
+            item.style.opacity = "1";
+            item.style.transform = "translateX(0)";
+        }, 120 + index * 90);
+    });
+}
+
+function closeMenu() {
+    menu.classList.add("translate-x-full");
+    overlay.classList.remove("opacity-100");
+    document.body.classList.remove("overflow-hidden");
+    setTimeout(() => overlay.classList.add("hidden"), 400);
+}
+
+// Close when clicking overlay
+overlay.addEventListener("click", closeMenu);
+
+
+// Swipe-to-Close Gesture
+let startX = 0;
+
+menu.addEventListener("touchstart", function(e) {
+    startX = e.touches[0].clientX;
+});
+
+menu.addEventListener("touchmove", function(e) {
+    let moveX = e.touches[0].clientX;
+    if (moveX - startX > 80) {
+        closeMenu();
+    }
+});
 </script>    </nav>
 
     <!-- 📦 APP CONTAINER -->
