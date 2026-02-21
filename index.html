@@ -628,7 +628,7 @@
 
         <div class="glass-panel p-4 rounded-xl">
             <div class="bg-blue-900/20 border border-dashed border-white/20 h-80 rounded flex items-center justify-center flex-col overflow-hidden">
-                <img src="assets/images/Street Night View.webp" class="w-full h-full object-cover opacity-50">
+                <img src="assets/images/circle-view.jpeg" class="w-full h-full object-cover opacity-50">
             </div>
         </div>
     </div>
@@ -712,14 +712,36 @@
 <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
 
     <!-- Pool -->
-    <div onclick="route(event, 'amenity-pool')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
-        <img src="assets/images/Swimning Pool.webp" class="absolute inset-0 w-full h-full object-cover opacity-20 group-hover:opacity-40 transition">
-        <i class="fas fa-swimmer text-4xl text-gold mb-4 relative z-10"></i>
-        <h4 class="text-lg font-medium relative z-10">Resort-Style Infinity Pool</h4>
-        <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">
-            Explore Details
-        </span>
-    </div>
+    <div onclick="route(event, 'amenity-pool')" 
+     class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group cursor-pointer relative overflow-hidden">
+
+    <!-- Background Fallback Color -->
+    <div class="absolute inset-0 bg-slate-800"></div>
+
+    <!-- Pool Image -->
+    <img 
+        src="assets/images/Swimning Pool.webp"
+        loading="lazy"
+        alt="HIWA NIRVARA Resort Style Infinity Pool"
+        class="absolute inset-0 w-full h-full object-cover opacity-30 group-hover:opacity-50 transition duration-700 ease-in-out group-hover:scale-110"
+        onerror="this.style.display='none'"
+    >
+
+    <!-- Gradient Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent"></div>
+
+    <!-- Content -->
+    <i class="fas fa-swimmer text-4xl text-gold mb-4 relative z-10"></i>
+
+    <h4 class="text-lg font-medium relative z-10">
+        Resort-Style Infinity Pool
+    </h4>
+
+    <span class="text-[10px] text-gray-400 mt-2 uppercase border-b border-gold pb-1 relative z-10">
+        Explore Details
+    </span>
+
+</div>
 
     <!-- Gym -->
     <div onclick="route(event, 'amenity-gym')" class="glass-card p-8 rounded-2xl flex flex-col items-center justify-center text-center aspect-square group hover:bg-white/5 cursor-pointer relative overflow-hidden">
@@ -756,7 +778,7 @@
 <section id="page-amenity-pool" class="page-section container mx-auto px-0 py-0" style="display: none;">
     
     <div class="relative h-[50vh]">
-        <img src="assets/images/Swimming pool.webp" class="w-full h-full object-cover">
+        <img src="assets/images/Swimning Pool.webp" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
             <h1 class="text-5xl font-serif text-white">Resort-Style Infinity Pool</h1>
         </div>
