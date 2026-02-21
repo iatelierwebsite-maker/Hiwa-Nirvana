@@ -421,53 +421,53 @@ function toggleMobileMenu() {
                 <div class="glass-panel p-2 rounded-2xl max-w-5xl mx-auto">
                     <!-- Main Display Image -->
 <div class="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl mb-4 group">
-    <!-- Video element with poster image fallback -->
-    <video id="rich-gallery-main"
-           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-           autoplay
-           muted
-           loop
-           playsinline
-           poster="assets/images/sky-view.webp"> <!-- Add poster image as fallback -->
-        <source src="assets/images/sky-view.mp4" type="video/mp4">
-        <!-- Fallback image if video fails -->
-        <img src="assets/images/sky-view.webp" class="w-full h-full object-cover">
-    </video>
-    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
-        <h3 id="rich-gallery-caption" class="text-2xl font-serif text-white">SKY VIEW</h3>
-    </div>
-</div>
-
-<!-- Thumbnails -->
-<div class="grid grid-cols-3 gap-4">
-    <!-- First Thumbnail - Main Gate View -->
-    <div onclick="updateHomeGallery('assets/Main-Gate-View.mp4', 'Main Gate View', 'assets/Main-Gate-View.webp')" 
-         class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-gold opacity-100 hover:opacity-100 transition">
-        <video class="w-full h-full object-cover"
+        <!-- Video element with poster image fallback -->
+        <video id="rich-gallery-main"
+               class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                autoplay
                muted
                loop
                playsinline
-               poster="assets/Main-Gate-View.webp">  <!-- Fixed: Use WebP for poster -->
-            <source src="assets/Main-Gate-View.mp4" type="video/mp4">
-            <!-- Fixed: Use WebP for fallback image -->
-            <img src="assets/Main-Gate-View.webp" class="w-full h-full object-cover" alt="Main Gate View">
+               poster="assets/images/sky-view.webp"> <!-- Add poster image as fallback -->
+            <source src="assets/images/sky-view.mp4" type="video/mp4">
+            <!-- Fallback image if video fails -->
+            <img src="assets/images/sky-view.webp" class="w-full h-full object-cover">
         </video>
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+            <h3 id="rich-gallery-caption" class="text-2xl font-serif text-white">SKY VIEW</h3>
+        </div>
     </div>
-
-    <!-- Second Thumbnail - Clubhouse -->
-    <div onclick="updateHomeGallery('assets/Clubhouse.mp4', 'Clubhouse', 'assets/Clubhouse.webp')" 
-         class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
-        <video class="w-full h-full object-cover"
-               autoplay
-               muted
-               loop
-               playsinline
-               poster="assets/Clubhouse.webp">  <!-- Fixed: Removed extra 'p' -->
-            <source src="assets/Clubhouse.mp4" type="video/mp4">
-            <img src="assets/Clubhouse.webp" class="w-full h-full object-cover" alt="Clubhouse">  <!-- Fixed: Use WebP -->
-        </video>
-    </div>
+    
+    <!-- Thumbnails -->
+    <div class="grid grid-cols-3 gap-4">
+        <!-- First Thumbnail - Main Gate View -->
+        <div onclick="updateHomeGallery('assets/Main-Gate-View.mp4', 'Main Gate View', 'assets/Main-Gate-View.webp')" 
+             class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-gold opacity-100 hover:opacity-100 transition">
+            <video class="w-full h-full object-cover"
+                   autoplay
+                   muted
+                   loop
+                   playsinline
+                   poster="assets/Main-Gate-View.webp">  <!-- Fixed: Use WebP for poster -->
+                <source src="assets/Main-Gate-View.mp4" type="video/mp4">
+                <!-- Fixed: Use WebP for fallback image -->
+                <img src="assets/Main-Gate-View.webp" class="w-full h-full object-cover" alt="Main Gate View">
+            </video>
+        </div>
+    
+        <!-- Second Thumbnail - Clubhouse -->
+        <div onclick="updateHomeGallery('assets/Clubhouse.mp4', 'Clubhouse', 'assets/Clubhouse.webp')" 
+             class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
+            <video class="w-full h-full object-cover"
+                   autoplay
+                   muted
+                   loop
+                   playsinline
+                   poster="assets/Clubhouse.webp">  <!-- Fixed: Removed extra 'p' -->
+                <source src="assets/Clubhouse.mp4" type="video/mp4">
+                <img src="assets/Clubhouse.webp" class="w-full h-full object-cover" alt="Clubhouse">  <!-- Fixed: Use WebP -->
+            </video>
+        </div>
 
     <!-- Third Thumbnail - Clubhouse Night View -->
     <div onclick="updateHomeGallery('assets/Clubhouse-Night-View.mp4', 'Clubhouse Night View', 'assets/Clubhouse-Night-View.webp')" 
@@ -1591,16 +1591,49 @@ document.getElementById("enquiryForm").addEventListener("submit", function(e) {
             }
         }
 
-        // --- Gallery Image Switcher ---
-        function updateHomeGallery(src, caption) {
-            const main = document.getElementById('rich-gallery-main');
-            const cap = document.getElementById('rich-gallery-caption');
+        // --- Gallery Video Switcher (updated) ---
+        function updateHomeGallery(videoSrc, caption, posterSrc) {
+            const videoElement = document.getElementById('rich-gallery-main');
+            const captionEl = document.getElementById('rich-gallery-caption');
             
-            main.style.opacity = '0';
+            // Fade out
+            videoElement.style.opacity = '0';
+            
             setTimeout(() => {
-                main.src = src;
-                cap.innerText = caption;
-                main.style.opacity = '1';
+                // Update video source
+                const source = videoElement.querySelector('source');
+                if (source) {
+                    source.src = videoSrc;
+                } else {
+                    // If no source element exists, create one
+                    const newSource = document.createElement('source');
+                    newSource.src = videoSrc;
+                    newSource.type = 'video/mp4';
+                    videoElement.appendChild(newSource);
+                }
+                
+                // Update poster if provided
+                if (posterSrc) {
+                    videoElement.poster = posterSrc;
+                }
+                
+                // Update caption
+                captionEl.innerText = caption;
+                
+                // Reload and play the video
+                videoElement.load();
+                
+                // Fade in
+                videoElement.style.opacity = '1';
+                
+                // Attempt to play with error handling
+                const playPromise = videoElement.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(error => {
+                        console.log("Auto-play prevented:", error);
+                        // Optional: Add a play button or handle silently
+                    });
+                }
             }, 200);
         }
 
