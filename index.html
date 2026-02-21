@@ -441,45 +441,48 @@ function toggleMobileMenu() {
 <!-- Thumbnails -->
 <div class="grid grid-cols-3 gap-4">
     <!-- First Thumbnail - Main Gate View -->
-    <div onclick="updateHomeGallery('assets/Main-Gate-View.mp4', 'Main Gate View', 'assets/images/Main-Gate-View.webp')" 
+    <div onclick="updateHomeGallery('assets/Main-Gate-View.mp4', 'Main Gate View', 'assets/Main-Gate-View.webp')" 
          class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-gold opacity-100 hover:opacity-100 transition">
         <video class="w-full h-full object-cover"
+               autoplay
                muted
                loop
                playsinline
-               poster="assets/Main-Gate-View.mp4">
+               poster="assets/Main-Gate-View.webp">  <!-- Fixed: Use WebP for poster -->
             <source src="assets/Main-Gate-View.mp4" type="video/mp4">
-            <img src="assets/Main-Gate-View.mp4" class="w-full h-full object-cover">
+            <!-- Fixed: Use WebP for fallback image -->
+            <img src="assets/Main-Gate-View.webp" class="w-full h-full object-cover" alt="Main Gate View">
         </video>
     </div>
 
     <!-- Second Thumbnail - Clubhouse -->
-    <div onclick="updateHomeGallery('assets/Clubhouse.mp4', 'Clubhouse', 'assets/images/Clubhouse.webp')" 
+    <div onclick="updateHomeGallery('assets/Clubhouse.mp4', 'Clubhouse', 'assets/Clubhouse.webp')" 
          class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
         <video class="w-full h-full object-cover"
+               autoplay
                muted
                loop
                playsinline
-               poster="assets/Clubhouse.mp4p">
+               poster="assets/Clubhouse.webp">  <!-- Fixed: Removed extra 'p' -->
             <source src="assets/Clubhouse.mp4" type="video/mp4">
-            <img src="assets/Clubhouse.mp4" class="w-full h-full object-cover">
+            <img src="assets/Clubhouse.webp" class="w-full h-full object-cover" alt="Clubhouse">  <!-- Fixed: Use WebP -->
         </video>
     </div>
 
-    <!-- Third Thumbnail - Clubhouse Night View (fixed typo) -->
-    <div onclick="updateHomeGallery('assets/images/Clubhouse-Night-View.mp4', 'Clubhouse Night View', 'assets/images/Clubhouse-Night-View.webp')" 
+    <!-- Third Thumbnail - Clubhouse Night View -->
+    <div onclick="updateHomeGallery('assets/Clubhouse-Night-View.mp4', 'Clubhouse Night View', 'assets/Clubhouse-Night-View.webp')" 
          class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
         <video class="w-full h-full object-cover"
+               autoplay
                muted
                loop
                playsinline
-               poster="assets/Clubhouse Night View.mp4">
-            <source src="assets/Clubhouse Night View.mp4" type="video/mp4">
-            <img src="assets/Clubhouse Night View.mp4" class="w-full h-full object-cover">
+               poster="assets/Clubhouse-Night-View.webp">  <!-- Fixed: Use WebP and proper filename -->
+            <source src="assets/Clubhouse-Night-View.mp4" type="video/mp4">
+            <img src="assets/Clubhouse-Night-View.webp" class="w-full h-full object-cover" alt="Clubhouse Night View">  <!-- Fixed: Use WebP -->
         </video>
     </div>
 </div>
-
             <!-- Villa Style Image Section (Premium Journey) -->
             <div class="bg-black/50 backdrop-blur-sm border-t border-white/5 py-12">
                 <div class="container mx-auto px-6">
