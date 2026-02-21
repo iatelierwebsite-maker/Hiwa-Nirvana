@@ -273,18 +273,74 @@
             </button>
         </div>
 
-        <!-- Mobile Menu Overlay -->
-        <div id="mobile-menu" class="fixed inset-0 bg-slate-900/98 z-40 hidden flex flex-col justify-center items-center space-y-6">
-            <button onclick="toggleMobileMenu()" class="absolute top-6 right-6 text-gray-400 text-3xl">×</button>
-            <a href="#home" onclick="route(event, 'home'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Home</a>
-            <a href="#villas" onclick="route(event, 'villas'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Villas</a>
-            <a href="#amenities" onclick="route(event, 'amenities'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Amenities</a>
-            <a href="#gallery" onclick="route(event, 'gallery'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Gallery</a>
-            <a href="#location" onclick="route(event, 'location'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">Location</a>
-            <a href="#emi" onclick="route(event, 'emi'); toggleMobileMenu()" class="text-2xl font-serif text-white hover:text-gold">EMI Calculator</a>
-            <a href="#contact" onclick="route(event, 'contact'); toggleMobileMenu()" class="text-xl text-gold border border-gold px-8 py-2">Enquiry</a>
-        </div>
-    </nav>
+       <!-- ================= MOBILE MENU ================= -->
+<div id="mobile-menu"
+     class="fixed inset-0 bg-slate-900/98 backdrop-blur-lg z-50 hidden overflow-y-auto transition-all duration-300">
+
+    <!-- Close Button -->
+    <button onclick="toggleMobileMenu()"
+            class="absolute top-6 right-6 text-gray-400 text-3xl hover:text-gold transition">
+        &times;
+    </button>
+
+    <!-- Menu Content -->
+    <div class="min-h-screen flex flex-col justify-center items-center px-6 py-16 space-y-8">
+
+        <a href="#home"
+           onclick="route(event, 'home'); toggleMobileMenu()"
+           class="text-3xl font-serif text-white hover:text-gold transition duration-300">
+            Home
+        </a>
+
+        <a href="#villas"
+           onclick="route(event, 'villas'); toggleMobileMenu()"
+           class="text-3xl font-serif text-white hover:text-gold transition duration-300">
+            Villas
+        </a>
+
+        <a href="#amenities"
+           onclick="route(event, 'amenities'); toggleMobileMenu()"
+           class="text-3xl font-serif text-white hover:text-gold transition duration-300">
+            Amenities
+        </a>
+
+        <a href="#gallery"
+           onclick="route(event, 'gallery'); toggleMobileMenu()"
+           class="text-3xl font-serif text-white hover:text-gold transition duration-300">
+            Gallery
+        </a>
+
+        <a href="#location"
+           onclick="route(event, 'location'); toggleMobileMenu()"
+           class="text-3xl font-serif text-white hover:text-gold transition duration-300">
+            Location
+        </a>
+
+        <a href="#emi"
+           onclick="route(event, 'emi'); toggleMobileMenu()"
+           class="text-3xl font-serif text-white hover:text-gold transition duration-300">
+            EMI Calculator
+        </a>
+
+        <!-- CTA Button -->
+        <a href="#contact"
+           onclick="route(event, 'contact'); toggleMobileMenu()"
+           class="mt-6 text-lg font-medium text-gold border border-gold px-10 py-3 rounded-full hover:bg-gold hover:text-black transition duration-300">
+            Enquiry Now
+        </a>
+
+    </div>
+</div>
+
+
+<!-- ================= MOBILE MENU SCRIPT ================= -->
+<script>
+function toggleMobileMenu() {
+    const menu = document.getElementById("mobile-menu");
+    menu.classList.toggle("hidden");
+    document.body.classList.toggle("overflow-hidden");
+}
+</script>    </nav>
 
     <!-- 📦 APP CONTAINER -->
     <main id="app">
