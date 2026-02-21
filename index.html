@@ -420,54 +420,65 @@ function toggleMobileMenu() {
                 </div>
                 <div class="glass-panel p-2 rounded-2xl max-w-5xl mx-auto">
                     <!-- Main Display Image -->
-                    <div class="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl mb-4 group">
-                        <video id="rich-gallery-main"
-       src="assets/sky-view.mp4"
-       class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-       autoplay
-       muted
-       loop
-       playsinline>
-</video>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
-                            <h3 id="rich-gallery-caption" class="text-2xl font-serif text-white">SKY VIEW</h3>
-                        </div>
-                    </div>
-                    <!-- Thumbnails -->
-                    <div class="grid grid-cols-3 gap-4">
-                        <div onclick="updateHomeGallery('assets/street-view.mp4', 'Serene Streets')" 
-     class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-gold opacity-100 hover:opacity-100 transition">
-
-    <video src="assets/Main-Gate-View.mp4"
-           class="w-full h-full object-cover"
+<div class="relative h-[400px] md:h-[500px] overflow-hidden rounded-xl mb-4 group">
+    <!-- Video element with poster image fallback -->
+    <video id="rich-gallery-main"
+           class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
            autoplay
            muted
            loop
-           playsinline>
+           playsinline
+           poster="assets/images/sky-view.webp"> <!-- Add poster image as fallback -->
+        <source src="assets/images/sky-view.mp4" type="video/mp4">
+        <!-- Fallback image if video fails -->
+        <img src="assets/images/sky-view.webp" class="w-full h-full object-cover">
     </video>
-
+    <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
+        <h3 id="rich-gallery-caption" class="text-2xl font-serif text-white">SKY VIEW</h3>
+    </div>
 </div>
-                        <div onclick="updateHomeGallery('assets/Clubhouse.mp4', 'Clubhouse')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
-                            <video src="assets/images/Clubhouse.mp4"
-           class="w-full h-full object-cover"
-           autoplay
-           muted
-           loop
-           playsinline>
-    </video>
-                        </div>
-                        <div onclick="updateHomeGallery('assets/Street Night View.mp4', 'Evening Ambiance')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
-                            <video src="assets/images/Street Night View.mp4"
-           class="w-full h-full object-cover"
-           autoplay
-           muted
-           loop
-           playsinline>
-    </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
+<!-- Thumbnails -->
+<div class="grid grid-cols-3 gap-4">
+    <!-- First Thumbnail - Main Gate View -->
+    <div onclick="updateHomeGallery('assets/images/Main-Gate-View.mp4', 'Main Gate View', 'assets/images/Main-Gate-View.webp')" 
+         class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-gold opacity-100 hover:opacity-100 transition">
+        <video class="w-full h-full object-cover"
+               muted
+               loop
+               playsinline
+               poster="assets/images/Main-Gate-View.webp">
+            <source src="assets/images/Main-Gate-View.mp4" type="video/mp4">
+            <img src="assets/images/Main-Gate-View.webp" class="w-full h-full object-cover">
+        </video>
+    </div>
+
+    <!-- Second Thumbnail - Clubhouse -->
+    <div onclick="updateHomeGallery('assets/images/Clubhouse.mp4', 'Clubhouse', 'assets/images/Clubhouse.webp')" 
+         class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
+        <video class="w-full h-full object-cover"
+               muted
+               loop
+               playsinline
+               poster="assets/images/Clubhouse.webp">
+            <source src="assets/images/Clubhouse.mp4" type="video/mp4">
+            <img src="assets/images/Clubhouse.webp" class="w-full h-full object-cover">
+        </video>
+    </div>
+
+    <!-- Third Thumbnail - Clubhouse Night View (fixed typo) -->
+    <div onclick="updateHomeGallery('assets/images/Clubhouse-Night-View.mp4', 'Clubhouse Night View', 'assets/images/Clubhouse-Night-View.webp')" 
+         class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
+        <video class="w-full h-full object-cover"
+               muted
+               loop
+               playsinline
+               poster="assets/images/Clubhouse-Night-View.webp">
+            <source src="assets/images/Clubhouse-Night-View.mp4" type="video/mp4">
+            <img src="assets/images/Clubhouse-Night-View.webp" class="w-full h-full object-cover">
+        </video>
+    </div>
+</div>
 
             <!-- Villa Style Image Section (Premium Journey) -->
             <div class="bg-black/50 backdrop-blur-sm border-t border-white/5 py-12">
