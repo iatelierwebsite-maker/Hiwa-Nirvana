@@ -348,59 +348,179 @@ function toggleMobileMenu() {
         <!-- 1️⃣ HOME PAGE -->
         <section id="page-home" class="page-section h-auto -mt-20 active" style="display: block;">
             <!-- Hero -->
-            <section class="relative h-screen flex items-center overflow-hidden">
+            <!-- HERO SECTION START -->
+<section class="hero">
 
     <!-- Background Image -->
-    <div class="absolute inset-0">
-        <img src="assets/images/Easy facing_villa_type_1.webp"
-             class="w-full h-full object-cover scale-110"
-             onerror="this.style.display='none'">
+    <div class="hero-bg"></div>
 
-        <!-- Light Overlay for Premium Effect -->
-        <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-black/20 to-transparent"></div>
-
-        <!-- Soft Light Enhancement -->
-        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_40%,rgba(255,215,0,0.15),transparent_60%)]"></div>
-    </div>
-
-
-    <!-- Content Wrapper -->
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-8 flex justify-end">
-
-        <div class="max-w-xl text-right">
-
-            <!-- Top Badge -->
-            <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-lg border border-white/20 px-5 py-2 rounded-full mb-6 shadow-lg">
-                <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                <span class="text-sm tracking-widest uppercase text-white font-medium">
-                    Secunderabad’s Finest
-                </span>
-            </div>
-
-            <!-- Heading -->
-            <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight drop-shadow-xl mb-6">
-                HIWA <span class="text-gold">NIRVANA</span>
-            </h1>
-
-            <!-- Sub Text -->
-            <p class="text-lg md:text-xl text-gray-200 mb-8 font-light leading-relaxed">
-                Premium 3 & 4 BHK Independent Villas  
-                Designed for Luxury Living
-            </p>
-
-            <!-- CTA Button -->
-            <div>
-                <button onclick="route(event, 'villas')"
-                        class="px-8 py-3 bg-gold text-black font-semibold rounded-lg 
-                               shadow-xl hover:scale-105 transition-all duration-300">
-                    Explore Residences
-                </button>
-            </div>
-
+    <!-- Content -->
+    <div class="hero-content">
+        
+        <div class="hero-badge">
+            <span class="dot"></span>
+            Secunderabad’s Finest Villas
         </div>
+
+        <h1>
+            HIWA <span>NIRVANA</span>
+        </h1>
+
+        <p>
+            Premium 3 & 4 BHK Independent Villas  
+            Crafted for Luxury Living & Timeless Elegance.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn-primary">Explore Residences</a>
+            <a href="#" class="btn-outline">Download Brochure</a>
+        </div>
+
     </div>
 
-</section></div>
+</section>
+<!-- HERO SECTION END -->
+
+<style>
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    overflow: hidden;
+    background: #0f172a;
+}
+
+/* Background Image Dominant */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url('assets/images/Easy facing_villa_type_1.webp') center center/cover no-repeat;
+    transform: scale(1.05);
+    filter: brightness(1.1) contrast(1.1) saturate(1.05);
+    z-index: 1;
+}
+
+/* Soft Gradient (NOT DULL) */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to right,
+        rgba(15,23,42,0.75) 0%,
+        rgba(15,23,42,0.45) 35%,
+        rgba(15,23,42,0.15) 60%,
+        rgba(15,23,42,0.05) 80%
+    );
+    z-index: 2;
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 550px;
+    color: #fff;
+}
+
+/* Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(8px);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.hero-badge .dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+}
+
+/* Heading */
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #d4af37;
+}
+
+/* Paragraph */
+.hero-content p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-primary {
+    background: #d4af37;
+    color: #000;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(212,175,55,0.4);
+}
+
+.btn-outline {
+    border: 1px solid #d4af37;
+    color: #d4af37;
+    padding: 12px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 5%;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
+
+</style></div>
             </div>
 
             <!-- New: Premium Journey (Home Specific) -->
