@@ -38,20 +38,20 @@
     <!-- 🎨 CSS: CUSTOM GLASSMORPHISM THEME -->
     <style>
         :root {
-            /* Palette */
-            --bg-dark: #0f172a; /* Slate 900 */
-            --bg-darker: #020617; /* Slate 950 */
-            --accent-gold: #d4af37;
-            --accent-gold-light: #f3e5ab;
-            --text-light: #f8fafc;
-            --text-muted: #94a3b8;
-            
-            /* Glass Variables */
-            --glass-bg: rgba(30, 41, 59, 0.4);
-            --glass-border: rgba(255, 255, 255, 0.08);
-            --glass-highlight: rgba(255, 255, 255, 0.03);
-            --glass-blur: 16px;
-        }
+    /* Palette - Vibrant Premium */
+    --bg-dark: #091221; /* Rich Deep Navy Blue */
+    --bg-darker: #04080f; /* Midnight Blue */
+    --accent-gold: #FFD700; /* Brighter, Vibrant Gold */
+    --accent-gold-light: #FFF080;
+    --text-light: #ffffff; /* Pure white for better readability */
+    --text-muted: #A0B0C0; /* Brighter Ash */
+    
+    /* Glass Variables */
+    --glass-bg: rgba(15, 25, 45, 0.4); /* Blends better with vibrant images */
+    --glass-border: rgba(255, 215, 0, 0.15); /* Subtle gold tint on glass */
+    --glass-highlight: rgba(255, 255, 255, 0.05);
+    --glass-blur: 16px;
+}
 
         /* --- Base Reset --- */
         body {
@@ -350,10 +350,8 @@ function toggleMobileMenu() {
             <!-- Hero -->
             <div class="relative h-screen flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img src="assets/images/Easy facing_villa_type_1.webp"
-             class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_10s_ease-in-out_infinite]"
-             onerror="this.style.display='none'">
-        <div class="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/40 to-[#0f172a]"></div>
+       <img src="assets/images/Easy facing_villa_type_1.webp" class="w-full h-full object-cover opacity-90 brightness-110 contrast-125 scale-105 animate-[pulse_10s_ease-in-out_infinite]" onerror="this.style.display='none'">
+<div class="absolute inset-0 bg-gradient-to-b from-slate-900/30 via-transparent to-[#0f172a]"></div></div>
     </div>
 
     <div class="relative z-10 text-center px-6 max-w-5xl mx-auto mt-16">
@@ -385,7 +383,7 @@ function toggleMobileMenu() {
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'villas')">
                              <div class="h-48 relative">
                                  <img src="assets/images/Entrance.webp" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Grand Entrance</h4></div>
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end justify-center pb-4"><h4 class="text-2xl font-serif text-white">Grand Entrance</h4></div>
                              </div>
                              <div class="p-4 text-center">
                                  <p class="text-xs text-gray-400">Double Height Entrance Lobbies</p>
@@ -394,7 +392,7 @@ function toggleMobileMenu() {
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'amenities')">
                              <div class="h-48 relative">
                                  <img src="assets/images/Landscape_1.webp" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Lush Landscapes</h4></div>
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end justify-center pb-4"><h4 class="text-2xl font-serif text-white">Lush Landscapes</h4></div>
                              </div>
                              <div class="p-4 text-center">
                                  <p class="text-xs text-gray-400">Glass Facades with Garden Views</p>
@@ -403,7 +401,7 @@ function toggleMobileMenu() {
                          <div class="flex-none w-[85%] md:w-[40%] snap-center glass-card rounded-xl overflow-hidden cursor-pointer" onclick="route(event, 'amenity-club')">
                              <div class="h-48 relative">
                                  <img src="assets/images/Clubhouse Night View.jpg" class="w-full h-full object-cover group-hover:scale-110 transition duration-700">
-                                 <div class="absolute inset-0 bg-black/40 flex items-center justify-center"><h4 class="text-2xl font-serif text-white">Elite Club</h4></div>
+                                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end justify-center pb-4"><h4 class="text-2xl font-serif text-white">Elite Club</h4></div>
                              </div>
                              <div class="p-4 text-center">
                                  <p class="text-xs text-gray-400">Infinity Pools &amp; Sky Decks</p>
@@ -447,8 +445,7 @@ function toggleMobileMenu() {
     </video>
 
 </div>
-                        <div onclick="updateHomeGallery('assets/Party hall.mp4', 'Party Hall')" 
-     class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-60 hover:opacity-100 transition">
+                        <div onclick="updateHomeGallery('assets/images/Party hall.mp4', 'Party Hall')" class="cursor-pointer rounded-lg overflow-hidden h-24 border-2 border-transparent hover:border-gold opacity-90 hover:opacity-100 hover:brightness-110 transition">
 
     <video src="assets/Clubhouse-Night-View.mp4"
            class="w-full h-full object-cover"
