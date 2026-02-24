@@ -1159,9 +1159,39 @@ function toggleMobileMenu() {
             Designed to promote holistic well-being for residents of all age groups.
         </p>
 
-        <div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">
-            Gym Layout Plan
+        <!-- ===========================
+     GYM LAYOUT PLAN MODULE
+     Uses Same Professional Script
+=========================== -->
+
+<div class="mt-8 pool-layout-module">
+
+    <label class="block text-white font-semibold mb-3">
+        Gym Layout Plan
+    </label>
+
+    <div class="upload-box relative h-64 border-2 border-dashed border-white/30 
+                rounded-lg flex flex-col items-center justify-center 
+                text-gray-400 bg-white/5 backdrop-blur-sm 
+                hover:border-gold transition overflow-hidden">
+
+        <input type="file" class="file-input absolute inset-0 opacity-0 cursor-pointer z-10" accept="image/*">
+
+        <div class="upload-text text-center pointer-events-none">
+            <p>Click to Upload Gym Layout Plan</p>
+            <p class="text-xs mt-1">PNG, JPG, WEBP</p>
         </div>
+
+        <img class="preview-img absolute inset-0 w-full h-full object-contain rounded-lg hidden cursor-zoom-in">
+
+        <button class="replace-btn absolute bottom-3 right-3 bg-black/70 
+                       text-white text-xs px-3 py-1 rounded hidden z-20">
+            Replace
+        </button>
+
+    </div>
+
+</div>
     </div>
 </section>
 
