@@ -990,16 +990,27 @@ function toggleMobileMenu() {
 
 <!-- POOL PAGE -->
 <section id="page-amenity-pool" class="page-section container mx-auto px-0 py-0" style="display: none;">
-    
-    <div class="relative h-[50vh]">
+     <div class="relative h-[50vh]">
         <img src="assets/images/swimming-pool.jpeg" class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/40 flex items-center justify-center">
             <h1 class="text-5xl font-serif text-white">Resort-Style Infinity Pool</h1>
         </div>
     </div>
 
-    <div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">
-        Pool Layout Plan </div>
+    <div class="p-8">
+        <button onclick="route(event, 'amenities')" class="text-gold mb-4">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+
+        <p class="text-gray-300 leading-relaxed">
+            Immerse yourself in a resort-inspired infinity pool designed for leisure and wellness. 
+            Featuring a 25-meter lap pool, integrated Jacuzzi seating, and ambient evening lighting, 
+            this luxurious water retreat offers residents a tranquil escape within the community.
+        </p>
+
+        <div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">
+            Pool Layout Plan
+        </div>
     </div>
 </section>
 
