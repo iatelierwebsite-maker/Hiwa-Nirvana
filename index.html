@@ -1008,9 +1008,131 @@ function toggleMobileMenu() {
             this luxurious water retreat offers residents a tranquil escape within the community.
         </p>
 
-        <div class="mt-8 h-64 border border-dashed border-white/20 rounded flex items-center justify-center text-gray-500">
-            Pool Layout Plan
+        <!-- ===========================
+     POOL LAYOUT PLAN MODULE
+     Professional SPA Safe Version
+=========================== -->
+
+<div class="mt-8 pool-layout-module">
+
+    <label class="block text-white font-semibold mb-3">
+        Pool Layout Plan
+    </label>
+
+    <div class="upload-box relative h-64 border-2 border-dashed border-white/30 
+                rounded-lg flex flex-col items-center justify-center 
+                text-gray-400 bg-white/5 backdrop-blur-sm 
+                hover:border-gold transition overflow-hidden">
+
+        <input type="file" class="file-input absolute inset-0 opacity-0 cursor-pointer z-10" accept="image/*">
+
+        <div class="upload-text text-center pointer-events-none">
+            <p>Click to Upload Pool Layout Plan</p>
+            <p class="text-xs mt-1">PNG, JPG, WEBP</p>
         </div>
+
+        <img class="preview-img absolute inset-0 w-full h-full object-contain rounded-lg hidden cursor-zoom-in">
+
+        <button class="replace-btn absolute bottom-3 right-3 bg-black/70 
+                       text-white text-xs px-3 py-1 rounded hidden z-20">
+            Replace
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- GLOBAL LIGHTBOX -->
+<div id="globalLightbox"
+     class="fixed inset-0 bg-black/90 flex items-center justify-center hidden z-50">
+
+    <img id="globalLightboxImg"
+         class="max-w-[90%] max-h-[90%] rounded-lg shadow-2xl">
+
+    <button id="globalLightboxClose"
+            class="absolute top-6 right-8 text-white text-3xl font-bold">
+        &times;
+    </button>
+</div>
+
+
+<script>
+(function () {
+
+    function initPoolLayoutModule() {
+
+        const modules = document.querySelectorAll('.pool-layout-module');
+        if (!modules.length) return;
+
+        modules.forEach(module => {
+
+            const fileInput = module.querySelector('.file-input');
+            const preview = module.querySelector('.preview-img');
+            const uploadText = module.querySelector('.upload-text');
+            const replaceBtn = module.querySelector('.replace-btn');
+
+            if (!fileInput) return;
+
+            fileInput.addEventListener('change', function (event) {
+                const file = event.target.files[0];
+                if (!file) return;
+
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    preview.src = e.target.result;
+                    preview.classList.remove('hidden');
+                    uploadText.style.display = 'none';
+                    replaceBtn.classList.remove('hidden');
+                };
+                reader.readAsDataURL(file);
+            });
+
+            replaceBtn.addEventListener('click', function (e) {
+                e.stopPropagation();
+                fileInput.click();
+            });
+
+            preview.addEventListener('click', function () {
+                openLightbox(preview.src);
+            });
+
+        });
+    }
+
+    function openLightbox(src) {
+        const lightbox = document.getElementById('globalLightbox');
+        const img = document.getElementById('globalLightboxImg');
+        if (!lightbox || !img) return;
+
+        img.src = src;
+        lightbox.classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+        const lightbox = document.getElementById('globalLightbox');
+        if (lightbox) lightbox.classList.add('hidden');
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+        initPoolLayoutModule();
+
+        const closeBtn = document.getElementById('globalLightboxClose');
+        const lightbox = document.getElementById('globalLightbox');
+
+        if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+
+        if (lightbox) {
+            lightbox.addEventListener('click', function (e) {
+                if (e.target === lightbox) closeLightbox();
+            });
+        }
+
+    });
+
+})();
+</script>
     </div>
 </section>
 
