@@ -1626,41 +1626,30 @@ function toggleMobileMenu() {
 
 <!-- WhatsApp Integration Script -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.getElementById("enquiryForm").addEventListener("submit", function(e) {
+    e.preventDefault();
 
-    const form = document.getElementById("enquiryForm");
+    const name = this.user_name.value;
+    const phone = this.user_phone.value;
+    const email = this.user_email.value;
 
-    if(form){
-        form.addEventListener("submit", function(e) {
-            e.preventDefault();
+    const message = `Hello HIWA NIRVANA Team,%0A%0A` +
+                    `I am interested in the HIWA NIRVANA Luxury Villas.%0A%0A` +
+                    `Name: ${name}%0A` +
+                    `Phone: ${phone}%0A` +
+                    `Email: ${email}%0A%0A` +
+                    `Please share complete details and pricing.`;
 
-            const name = document.querySelector('[name="user_name"]').value;
-            const phone = document.querySelector('[name="user_phone"]').value;
-            const email = document.querySelector('[name="user_email"]').value;
+    const whatsappURL = `https://wa.me/9188859888?text=${message}`;
 
-            const message = `Hello HIWA NIRVANA Team,
-
-I am interested in the HIWA NIRVANA Luxury Villas.
-
-Name: ${HiwaInfraDevelopers}
-Phone: ${+919188859888}
-Email: ${email}
-
-Please share complete details and pricing.`;
-
-            const whatsappNumber = "919188859888";
-
-            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-
-            window.open(whatsappURL, "_blank");
-        });
-    }
-
+    window.open(whatsappURL, "_blank");
 });
 </script>
+            </div>
+        </section>
 
-            </main>
-                
+    </main>
+
     <!-- FOOTER -->
    <footer class="border-t border-white/5 bg-black/40 mt-auto py-12">
     <div class="container mx-auto px-6">
