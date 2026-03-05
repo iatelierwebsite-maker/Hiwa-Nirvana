@@ -1630,31 +1630,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.getElementById("enquiryForm");
 
-    form.addEventListener("submit", function(e) {
-        e.preventDefault();
+    if(form){
+        form.addEventListener("submit", function(e) {
+            e.preventDefault();
 
-        const name = form.user_name.value;
-        const phone = form.user_phone.value;
-        const email = form.user_email.value;
+            const name = document.querySelector('[name="user_name"]').value;
+            const phone = document.querySelector('[name="user_phone"]').value;
+            const email = document.querySelector('[name="user_email"]').value;
 
-        const message =
-`Hello HIWA NIRVANA Team,
+            const message = `Hello HIWA NIRVANA Team,
 
 I am interested in the HIWA NIRVANA Luxury Villas.
 
-Name: ${name}
-Phone: ${phone}
+Name: ${HiwaInfraDevelopers}
+Phone: ${+919188859888}
 Email: ${email}
 
 Please share complete details and pricing.`;
 
-        const whatsappURL = `https://wa.me/9188859888?text=${encodeURIComponent(message)}`;
+            const whatsappNumber = "919188859888";
 
-        window.open(whatsappURL, "_blank");
-    });
+            const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+            window.open(whatsappURL, "_blank");
+        });
+    }
 
 });
 </script>
+                
     <!-- FOOTER -->
    <footer class="border-t border-white/5 bg-black/40 mt-auto py-12">
     <div class="container mx-auto px-6">
