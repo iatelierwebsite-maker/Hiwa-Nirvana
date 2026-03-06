@@ -38,18 +38,20 @@
     <!-- 🎨 CSS: CUSTOM GLASSMORPHISM THEME -->
     <style>
         :root {
-    /* Palette - Vibrant Premium */
-    --bg-dark: #091221; /* Rich Deep Navy Blue */
-    --bg-darker: #04080f; /* Midnight Blue */
-    --accent-gold: #FFD700; /* Brighter, Vibrant Gold */
-    --accent-gold-light: #FFF080;
-    --text-light: #ffffff; /* Pure white for better readability */
-    --text-muted: #A0B0C0; /* Brighter Ash */
-    
-    /* Glass Variables */
-    --glass-bg: rgba(15, 25, 45, 0.4); /* Blends better with vibrant images */
-    --glass-border: rgba(255, 215, 0, 0.15); /* Subtle gold tint on glass */
-    --glass-highlight: rgba(255, 255, 255, 0.05);
+
+    --bg-dark: #D9C4A0;
+    --bg-darker: #D9C4A0;
+    --bg-light: #D9C4A0;
+
+    --accent-gold: #B8924A;
+    --accent-gold-light: #D6B46A;
+
+    --text-light: #3A2E1F;
+    --text-muted: #6B5A43;
+
+    --glass-bg: rgba(255,255,255,0.45);
+    --glass-border: rgba(184,146,74,0.25);
+    --glass-highlight: rgba(255,255,255,0.3);
     --glass-blur: 16px;
 }
 
@@ -86,7 +88,7 @@
         }
 
         .glass-card {
-            background: linear-gradient(135deg, rgba(48, 78, 118, 0.968) 0%, rgba(255, 255, 255, 0.01) 100%);
+            background: linear-gradient(135deg, rgba(14, 15, 17, 0.968) 0%, rgba(255, 255, 255, 0.01) 100%);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.05);
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -162,7 +164,7 @@
         /* --- Scrollbar --- */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--bg-dark); }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb { background: #0b0f13; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: var(--accent-gold); }
 
         /* --- Navigation Active State --- */
@@ -437,7 +439,7 @@ function toggleMobileMenu() {
     position: relative;
     z-index: 3;
     max-width: 550px;
-    color: #fff;
+    color: #fffefc;
 }
 
 /* Badge */
@@ -457,7 +459,7 @@ function toggleMobileMenu() {
 .hero-badge .dot {
     width: 8px;
     height: 8px;
-    background: #22c55e;
+    background: #55e489;
     border-radius: 50%;
 }
 
